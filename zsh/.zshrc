@@ -172,10 +172,11 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 export PATH="/usr/local/visidata/bin:$PATH"
 
 # alias
-alias v='nvim'
+#alias v='nvim'
 alias vi='nvim'
 #alias vv='neovide --multigrid'
-alias vv='goneovim'
+alias vv='nvim'
+alias v='goneovim'
 alias ra='ranger'
 alias enableproxy='export export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;' # 设置终端代理
 alias disableproxy='unset http_proxy https_proxy' # 取消终端代理
@@ -187,3 +188,25 @@ alias vpython='ipython --TerminalInteractiveShell.editing_mode=vi'
 
 # config
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
+
+
+
+#粘贴命令卡顿解决方案：
+#问题表现为由粘贴的内容像是一个字符一个字符的手动快速敲入的，但是依然不如内容一下子上屏的速度快。其次还会出现粘贴的内容会覆盖原有命令行里的内容，在动画完成后才会调整为同时显示。
+#这里也包括将 Finder 中的目录拖动到 Zsh 中，目录路径出现的效果与粘贴内容一致。
+#将以下内容粘贴到 ~/.zshrc 配置文件中重启 Zsh 即可：
+# This speeds up pasting w/ autosuggest
+# https://github.com/zsh-users/zsh-autosuggestions/issues/238
+pasteinit() {
+  OLD_SELF_INSERT=${${(s.:.)widgets[self-insert]}[2,3]}
+  zle -N self-insert url-quote-magic # I wonder if you'd need `.url-quote-magic`?
+}
+
+pastefinish() {
+  zle -N self-insert $OLD_SELF_INSERT
+}
+zstyle :bracketed-paste-magic paste-init pasteinit
+zstyle :bracketed-paste-magic paste-finish pastefinish
+
+

@@ -23,7 +23,6 @@ vmap L $
 set clipboard=unnamed
 
 
-
 "=================
 "advanced mapping
 "=================
@@ -35,8 +34,7 @@ set clipboard=unnamed
 exmap back obcommand app:go-back
 nmap <C-o> :back
 exmap forward obcommand app:go-forward
-nmap <C-i> :forward
-
+"nmap <C-i> :forward
 "=================
 "move line up and down
 "=================
@@ -57,8 +55,18 @@ nmap gf :gotolink
 "=================
 exmap toggleLeft obcommand app:toggle-left-sidebar
 exmap toggleRight obcommand app:toggle-right-sidebar
-nmap L :toggleRight
-nmap H :toggleLeft
+unmap <Space>
+nmap <Space>m :toggleRight
+nmap <Space>e :toggleLeft
+
+"=================
+"split
+"=================
+exmap vertital obcommand workspace:split-vertical
+exmap horizontal obcommand workspace:split-horizontal
+
+nmap <Space>vs :vertital
+nmap <Space>sv :horizontal
 
 
 
