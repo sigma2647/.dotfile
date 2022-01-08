@@ -39,6 +39,7 @@
 ## Fontfamily is
 ## In MacOS, 
  FontFamily = "MesloLGS NF"
+ #FontFamily = "Cascadia Code"
 ## In Linux
 # FontFamily = "Consolas"
 ## In Windows
