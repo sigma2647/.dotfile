@@ -189,6 +189,8 @@ alias vpython='ipython --TerminalInteractiveShell.editing_mode=vi'
 # config
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
+export PATH="$PATH:/Users/lawrence/bin"
+
 
 
 

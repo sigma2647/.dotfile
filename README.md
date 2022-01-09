@@ -23,3 +23,4 @@ https://github.com/Parth/dotfiles#tmux
 - how to specific brew path
 - add lf
 
+-

@@ -5,7 +5,8 @@
 [Editor]
 ## Makes the application window frameless.
 # BorderlessWindow = false
- BorderlessWindow = true
+BorderlessWindow = true
+Gap = 0
 
 ## Editor minimum window width (>= 400)
 # Width = 800
@@ -15,7 +16,7 @@
 # Gap = 2
 
 ## Specifies the command used to open the file in an external file explorer, etc. The default is ":e".
-# FileOpenCmd = ":e"
+FileOpenCmd = ":e"
 
 ## Reverses the direction of scrolling with the mouse wheel.
 # ReversingScrollDirection = false
@@ -55,9 +56,10 @@
 ## If you prefer the traditional Vim UI, set it to false for all.
 ## Also, `ExtMessages` is still experimental at this time and we don't recommend setting it to true if you want stability.
 # ExtCmdline   = false
-# ExtPopupmenu = false
+#ExtPopupmenu = false
 # ExtTabline   = false
 # ExtMessages  = false
+
 
 ## Goneovim has a cached rendering feature enabled to speed up the process.
 ## If you want to disable it, set it to false
@@ -104,10 +106,10 @@
 
 ## Enable desktop notification settings for nvim messages.
 ## This option works only if `ExtMessages` is enabled.
-# DesktopNotifications = false
+ #DesktopNotifications = false
 
 # Display the effect when clicked
-# ClickEffect = false
+#ClickEffect = true
 
 # Pattern that fills the diff background
 # Change the background pattern used for diff display.
@@ -150,7 +152,7 @@ SmoothMove = true
 
 ## Specifies the duration of the animation at the smooth cursor. Default is 55ms.
 ## Note that Goneovim uses the specified value as a base value and makes slight adjustments depending on the distance.
-# Duration = ５５
+ #Duration = ５５
 
 
 
@@ -247,7 +249,6 @@ SmoothMove = true
 ## Configure the markdown preview feature
 [Markdown]
 # Disable = false
- Disable = true
 
 ## Specifying code highlighting styles
 # CodeHlStyle = "github"
