@@ -182,6 +182,7 @@ alias enableproxy='export export http_proxy=http://127.0.0.1:1087;export https_p
 alias disableproxy='unset http_proxy https_proxy' # 取消终端代理
 alias ip='curl cip.cc' # 测试
 alias x='tmux'
+alias xa='tmux attach'
 alias c='z'
 alias vpython='ipython --TerminalInteractiveShell.editing_mode=vi'
 

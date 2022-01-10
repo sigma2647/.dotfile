@@ -70,6 +70,19 @@ nmap <Space>sv :horizontal
 
 
 
+"=================
+"focus
+"=================
+exmap focusTop obcommand editor:focus-top
+exmap focusBut obcommand editor:focus-bottom
+exmap focusLeft obcommand editor:focus-left
+exmap focusRight obcommand editor:focus-right
+
+nmap <C-k> :focusTop
+nmap <C-j> :focusBut
+nmap <C-h> :focusLeft
+nmap <C-l> :focusRight
+
 "app:toggle-left-sidebar
 "app:toggle-right-sidebar
 "
