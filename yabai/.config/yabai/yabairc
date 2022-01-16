@@ -49,10 +49,14 @@ yabai -m config window_gap                   12
 # yabai -m rule --add app="Alacritty"     space=2
 # ^^ these are annoying
 yabai -m rule --add app="Safari"        space=2
-yabai -m rule --add app="Obsidian"       space=3
-yabai -m rule --add app="提醒事项"       space=3
-yabai -m rule --add app="goneovim"       space=1
+yabai -m rule --add app="Obsidian"      space=3
+yabai -m rule --add app="提醒事项"      space=3
+yabai -m rule --add app="goneovim"      space=1
+yabai -m rule --add app="VimR"          space=1
+yabai -m rule --add app="VimR.app"      space=1
 yabai -m rule --add app="zathura"       space=1
+yabai -m rule --add app="Safari浏览器"  space=1
+yabai -m rule --add app="Safari"        space=1
 
 
 

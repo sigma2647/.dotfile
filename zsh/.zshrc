@@ -154,8 +154,13 @@ export EDITOR="/usr/local/neovim/bin/nvim"
 # neovim END
 #
 
+
+# <<< goneovim <<<
 export PATH=$PATH:/Applications/goneovim.app/Contents/MacOS
-# end
+
+# <<< goneovim <<<
+export PATH=$PATH:/Applications/VimR.app/Contents/MacOS
+
 # 
 # ranger
 
@@ -176,7 +181,8 @@ export PATH="/usr/local/visidata/bin:$PATH"
 alias vi='nvim'
 #alias vv='neovide --multigrid'
 alias vv='nvim'
-alias v='goneovim'
+alias vo='goneovim'
+alias v='vimr'
 alias ra='ranger'
 alias enableproxy='export export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;' # 设置终端代理
 alias disableproxy='unset http_proxy https_proxy' # 取消终端代理
@@ -192,8 +198,8 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 export PATH="$PATH:/Users/lawrence/bin"
 
-
-
+export PATH="/Users/lawrence/.local/bin:$PATH"
+export PATH="${PATH}:${HOME}/.local/bin/"
 
 #粘贴命令卡顿解决方案：
 #问题表现为由粘贴的内容像是一个字符一个字符的手动快速敲入的，但是依然不如内容一下子上屏的速度快。其次还会出现粘贴的内容会覆盖原有命令行里的内容，在动画完成后才会调整为同时显示。
@@ -213,3 +219,7 @@ zstyle :bracketed-paste-magic paste-init pasteinit
 zstyle :bracketed-paste-magic paste-finish pastefinish
 
 
+
+eval $(thefuck --alias)
+
+#pip install jupyterlab-vim

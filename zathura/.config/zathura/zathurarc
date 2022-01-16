@@ -12,10 +12,12 @@ map J zoom out
 map i recolor
 
 
-set default-bg \#242038
+# set default-bg \#242038
 # set recolor true
 # bspc rule -a Zathura state=tiled
-#set recolor-darkcolor \#839496
+# 测试
+# set recolor-darkcolor \#839496
+
 
 set synctex true
 set synctex-editor-command "nvr --remote-silent +%{line} %{input}"
