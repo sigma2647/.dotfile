@@ -39,8 +39,8 @@ FileOpenCmd = ":e"
 ## Of course, these settings can also be changed by setting the guifont and linespace on the Neovim side.
 ## Fontfamily is
 ## In MacOS, 
- FontFamily = "MesloLGS NF"
- #FontFamily = "Cascadia Code"
+ #FontFamily = "MesloLGS NF"
+ FontFamily = "JetBrains Mono"
 ## In Linux
 # FontFamily = "Consolas"
 ## In Windows
@@ -48,7 +48,7 @@ FileOpenCmd = ":e"
 ## Fontsize is
  FontSize = 12
 ## linespace is
-# Linespace = 6
+ #Linespace = 27
 
 ## Neovim external UI features
 ## The following is the default value of goneovim.
