@@ -24,3 +24,9 @@ https://github.com/Parth/dotfiles#tmux
 - add lf
 
 -
+
+
+## terminal
+- spaceship
+- oh-my-zsh
+
