@@ -1,0 +1,13 @@
+# Basic Setting
+set hidden true
+set ignorecase true
+set icons true
+
+
+# Set lf to raanger like keybindings
+
+#map S 
+
+
+map gD cd ~/Downloads
+

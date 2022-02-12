@@ -26,7 +26,10 @@ https://github.com/Parth/dotfiles#tmux
 -
 
 
-## terminal
+## ┌──────────┐
+## │ terminal │
+## └──────────┘
+
 - spaceship
 - oh-my-zsh
 
