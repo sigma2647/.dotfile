@@ -163,3 +163,9 @@ ex=:\
 *.pdf=:\
 *.nix=:\
 "
+
+
+
+
+# git remote add origin git@github.com:user/repo.git
+# git remote rm origin
