@@ -175,6 +175,11 @@ SPACESHIP_CONDA_SYMBOL='🐍'
 SPACESHIP_PYENV_SYMBOL='🐍'
 SPACESHIP_TIME_SHOW='%H:%M:%S'
 SPACESHIP_PROMPT_DEFAULT_PREFIX='.'
+# ┌────────┐
+# │ source │
+# └────────┘
+export PATH=$PATH:/Applications/goneovim.app/Contents/MacOS
+
 
 
 conda activate quant
