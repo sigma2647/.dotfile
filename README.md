@@ -33,3 +33,44 @@ https://github.com/Parth/dotfiles#tmux
 - spaceship
 - oh-my-zsh
 
+
+
+box
+
+## ┌────────────┐
+## │ KARABINNER │
+## └────────────┘
+```json
+"rules": [
+    {
+        "description": "Change held-down f17 to left_shift",
+        "manipulators": [
+            {
+                "from": {
+                    "key_code": "f17",
+                    "modifiers": {
+                        "optional": [
+                            "left_shift"
+                        ]
+                    }
+                },
+                "parameters": {
+                    "basic.to_if_alone_timeout_milliseconds": 250,
+                    "basic.to_if_held_down_threshold_milliseconds": 1
+                },
+                "to_if_alone": [
+                    {
+                        "key_code": "f17"
+                    }
+                ],
+                "to_if_held_down": [
+                    {
+                        "key_code": "left_shift"
+                    }
+                ],
+                "type": "basic"
+            }
+        ]
+    },
+```
+
