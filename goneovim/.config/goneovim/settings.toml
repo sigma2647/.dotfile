@@ -5,7 +5,7 @@
 [Editor]
 ## Makes the application window frameless.
 # BorderlessWindow = false
-BorderlessWindow = true
+#BorderlessWindow = true
 Gap = 0
 
 ## Editor minimum window width (>= 400)
@@ -39,14 +39,14 @@ FileOpenCmd = ":e"
 ## Of course, these settings can also be changed by setting the guifont and linespace on the Neovim side.
 ## Fontfamily is
 ## In MacOS, 
- #FontFamily = "MesloLGS NF"
- FontFamily = "JetBrains Mono"
+ FontFamily = "MesloLGS NF"
+ #FontFamily = "JetBrains Mono"
 ## In Linux
 # FontFamily = "Consolas"
 ## In Windows
 # FontFamily = "Windows"
 ## Fontsize is
- FontSize = 20
+ FontSize = 15
 ## linespace is
  #Linespace = 27
 
@@ -283,3 +283,4 @@ SmoothMove = true
 
 ## Specifies whether the last exited session should be restored at the next startup.
 # RestoreSession = false
+
