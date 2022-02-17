@@ -1,4 +1,5 @@
 # install
+- ubuntu
 ```
 apt install stow
 ```
