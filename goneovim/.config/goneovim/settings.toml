@@ -46,7 +46,7 @@ FileOpenCmd = ":e"
 ## In Windows
 # FontFamily = "Windows"
 ## Fontsize is
- FontSize = 15
+ FontSize = 14
 ## linespace is
  #Linespace = 27
 
