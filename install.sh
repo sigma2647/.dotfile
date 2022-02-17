@@ -11,3 +11,4 @@ apt install vim
 
 git clone https://github.com/sigma2647/nvim -b lua ~/.config/nvim
 
+
