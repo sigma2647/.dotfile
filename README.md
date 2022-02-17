@@ -30,15 +30,17 @@ https://github.com/Parth/dotfiles#tmux
 ## ┌──────────┐
 ## │ terminal │
 ## └──────────┘
-- spaceship
+### spaceship
 ```
 brew install spaceship
 git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 ```
-###
+
+### zsh-plugins
 ```
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
 - spaceship
@@ -95,6 +97,7 @@ brew install pynvim
 
 [jetbrains_mono](https://www.jetbrains.com/lp/mono/)
 
+
 ┌──────────┐
 │ anaconda │
 └──────────┘
@@ -107,3 +110,10 @@ conda config --set changeps1 False
 
 
 
+┌──────────┐
+│ imselect │
+└──────────┘
+[im-select](https://github.com/daipeihust/im-select)
+``` shell
+brew tap daipeihust/tap && brew install im-select
+```

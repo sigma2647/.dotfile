@@ -73,7 +73,7 @@ ZSH_THEME="spaceship"
 plugins=(
     git
     zsh-autosuggestions
-    #zsh-syntax-highlighting	
+    zsh-syntax-highlighting	
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -181,5 +181,5 @@ SPACESHIP_PROMPT_DEFAULT_PREFIX='.'
 export PATH=$PATH:/Applications/goneovim.app/Contents/MacOS
 
 
+#conda activate quant
 
-source /Users/lawrencexing/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
