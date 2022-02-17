@@ -95,3 +95,15 @@ brew install pynvim
 
 [jetbrains_mono](https://www.jetbrains.com/lp/mono/)
 
+┌──────────┐
+│ anaconda │
+└──────────┘
+## anaconda
+### config
+close default
+```shell
+conda config --set changeps1 False
+```
+
+
+

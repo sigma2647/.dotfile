@@ -165,7 +165,7 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
+export PATH="/usr/local/anaconda3/bin:$PATH"
 
 
 # ┌───────────┐
@@ -182,5 +182,5 @@ export PATH=$PATH:/Applications/goneovim.app/Contents/MacOS
 
 
 
-conda activate quant
+#conda activate quant
 source /Users/lawrencexing/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
