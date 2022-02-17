@@ -182,5 +182,4 @@ export PATH=$PATH:/Applications/goneovim.app/Contents/MacOS
 
 
 
-#conda activate quant
 source /Users/lawrencexing/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
