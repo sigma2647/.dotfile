@@ -65,8 +65,10 @@ nmap <Space>e :toggleLeft
 exmap vertital obcommand workspace:split-vertical
 exmap horizontal obcommand workspace:split-horizontal
 
-nmap <Space>vs :vertital
-nmap <Space>sv :horizontal
+"nmap <Space>vs :vertital
+"nmap <Space>sv :horizontal
+nmap <C-\> :vertital
+nmap <C--> :horizontal
 
 
 
