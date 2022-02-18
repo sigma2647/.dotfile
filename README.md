@@ -1,4 +1,9 @@
+┌─────────┐
+│ dotfile │
+└─────────┘
+
 # install
+## install stow
 - ubuntu
 ```
 apt install stow
@@ -24,29 +29,28 @@ https://github.com/Parth/dotfiles#tmux
 - how to specific brew path
 - add lf
 
--
 
-
-## ┌──────────┐
-## │ terminal │
-## └──────────┘
+┌─────┐
+│ zsh │
+└─────┘
+## zsh
 ### spaceship
 ```
 brew install spaceship
 git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 ```
-
 ### zsh-plugins
 ```
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
-
-- spaceship
-- oh-my-zsh
-
-
+- z.lua
+[z.lua](https://github.com/skywind3000/z.lua)
+```zsh
+skywind3000/z.lua
+git clone https://github.com/skywind3000/z.lua ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/z.lua
+```
 
 box
 
@@ -87,7 +91,6 @@ box
     },
 ```
 
-brew install pynvim
 
 
 # Font
@@ -117,3 +120,10 @@ conda config --set changeps1 False
 ``` shell
 brew tap daipeihust/tap && brew install im-select
 ```
+┌──────┐
+│ nivm │
+└──────┘
+```shell
+brew install pynvim
+```
+

@@ -70,10 +70,12 @@ ZSH_THEME="spaceship"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 plugins=(
     git
     zsh-autosuggestions
-    zsh-syntax-highlighting	
+    zsh-syntax-highlighting
+    #z.lua
 )
 
 source $ZSH/oh-my-zsh.sh
