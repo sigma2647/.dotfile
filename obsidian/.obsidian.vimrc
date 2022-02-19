@@ -19,6 +19,10 @@ nmap L $
 vmap H ^
 vmap L $
 
+imap <C-h> <left>
+imap <C-j> <down>
+imap <C-k> <up>
+imap <C-l> <right>
 " Yank to system clipboard
 set clipboard=unnamed
 
