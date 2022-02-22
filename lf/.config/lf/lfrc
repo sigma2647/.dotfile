@@ -11,3 +11,9 @@ set icons true
 
 map gD cd ~/Downloads
 map S push :shell<enter>$SHELL<enter>
+
+# TODO : Add more keybindings
+# TODO : add unzip command
+# TODO : add unrar command
+# TODO : add tar command
+map gU unzip -o

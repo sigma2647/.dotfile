@@ -52,6 +52,7 @@ nmap K :lineUp
 "=================
 exmap gotolink obcommand editor:follow-link
 nmap gf :gotolink
+nmap gd :gotolink
 
 
 "=================
