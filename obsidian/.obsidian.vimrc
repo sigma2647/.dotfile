@@ -1,4 +1,5 @@
 "TODO: Learn regis
+"n regis
 "TODO: split vertital and horizontal"
 "workspace:split-vertical
 "workspace:split-horizontal
@@ -51,8 +52,12 @@ nmap K :lineUp
 "goto link
 "=================
 exmap gotolink obcommand editor:follow-link
+exmap gotolinkwindow obcommand editor:open-link-in-new-leaf
 nmap gf :gotolink
 nmap gd :gotolink
+nmap gD :gotolinkwindow
+nmap gF :gotolinkwindow
+
 
 
 "=================
