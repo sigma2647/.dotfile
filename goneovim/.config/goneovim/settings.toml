@@ -284,3 +284,6 @@ SmoothMove = true
 ## Specifies whether the last exited session should be restored at the next startup.
 # RestoreSession = false
 
+
+## box
+#add conda $PATH envirment to .zprofile
