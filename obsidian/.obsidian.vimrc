@@ -16,7 +16,8 @@
 imap jk <Esc>
 imap ; <Esc>
 imap ； <Esc>
-nmap S :w<CR>
+"nmap S :w<CR>
+
 nmap \ :
 nmap j gj
 nmap k gk
@@ -85,11 +86,13 @@ exmap horizontal obcommand workspace:split-horizontal
 "nmap <Space>sv :horizontal
 nmap <C-\> :vertital
 nmap <C--> :horizontal
+nmap `v :vertital
+nmap `b :horizontal
 
 
-"=================
-"focus
-"=================
+" ┌───────────┐
+" │ NAVIGAION │
+" └───────────┘
 exmap focusTop obcommand editor:focus-top
 exmap focusBut obcommand editor:focus-bottom
 exmap focusLeft obcommand editor:focus-left
@@ -122,8 +125,16 @@ nmap <Space>t :tag
 exmap copyUrl obcommand workspace:copy-url
 nmap <Space>cu :copyUrl
 
+"Available commands: editor:save-file
+exmap save obcommand editor:save-file
+nmap S :save
 
+exmap close obcommand workspace:close
+nmap Q :close
 
+"graph:open-local
+exmap graph obcommand graph:open-local
+nmap <Space>g :graph
 
 "app:toggle-left-sidebar
 "app:toggle-right-sidebar
@@ -239,7 +250,6 @@ nmap <Space>cu :copyUrl
 "file-explorer:reveal-active-file
 "file-explorer:move-file
 "global-search:open
-"switcher:open
 "graph:open
 "graph:open-local
 "graph:animate
