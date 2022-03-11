@@ -35,6 +35,7 @@ imap <C-l> <right>
 set clipboard=unnamed
 
 
+
 "=================
 "advanced mapping
 "=================
@@ -65,6 +66,11 @@ nmap gd :gotolink
 nmap gD :gotolinkwindow
 nmap gF :gotolinkwindow
 
+"unmap <CR>
+nmap <CR> :gotolink
+nmap <C-CR> :gotolinkwindow
+nmap <BS> :back
+" todo spli  indow
 
 
 "=================
