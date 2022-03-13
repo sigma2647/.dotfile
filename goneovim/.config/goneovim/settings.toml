@@ -79,7 +79,7 @@ FileOpenCmd = ":e"
 
 ## The input method editor will be automatically disabled when the mode is changed to normal mode.
 ## It may be useful for users who use the input method editor (e.g. East Asian users).
-## DisableImeInNormal = false
+DisableImeInNormal = true
 
 ## Draw borders on the GUI side instead of the vertical border and status line that nvim draws.
 # DrawWindowSeparator = false
