@@ -130,3 +130,5 @@ brew install pynvim
 
 hellp
 
+
+just download github desktop
