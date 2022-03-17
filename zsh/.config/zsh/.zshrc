@@ -131,6 +131,7 @@ alias xa='tmux attach'
 alias c='z'
 alias vpython='ipython --TerminalInteractiveShell.editing_mode=vi'
 alias g='lazygit'
+alias jp='jupyter'
 
 # ┌────────┐
 # │ export │
