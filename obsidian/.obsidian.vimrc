@@ -90,8 +90,8 @@ exmap horizontal obcommand workspace:split-horizontal
 
 "nmap <Space>vs :vertital
 "nmap <Space>sv :horizontal
-nmap <C-\> :vertital
-nmap <C--> :horizontal
+"nmap <C-\> :vertital
+"nmap <C--> :horizontal
 nmap `v :vertital
 nmap `b :horizontal
 
