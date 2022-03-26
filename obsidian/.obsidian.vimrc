@@ -53,8 +53,6 @@ exmap forward obcommand app:go-forward
 "=================
 exmap lineDown obcommand editor:swap-line-down
 exmap lineUp obcommand editor:swap-line-up
-nmap J :lineDown
-nmap K :lineUp
 
 "=================
 "goto link
