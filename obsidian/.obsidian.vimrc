@@ -69,6 +69,7 @@ nmap gF :gotolinkwindow
 "unmap <CR>
 nmap <CR> :gotolink
 nmap <C-CR> :gotolinkwindow
+nmap <S-CR> :gotolinkwindow
 nmap <BS> :back
 " todo spli  indow
 
