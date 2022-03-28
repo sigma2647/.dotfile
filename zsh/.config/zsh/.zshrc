@@ -139,6 +139,9 @@ alias dot='~/dotfile'
 # └────────┘
 # export
 # export PATH="/opt/homebrew/anaconda3/bin:$PATH"  # commented out by conda initialize
+export PATH="$HOME/.emacs.d/bin:$PATH"
+#export PATH="/Applications/MacPorts/Emacs.app/Contents/MacOS:$PATH"
+export PATH="/Applications/Emacs.app/Contents/MacOS:$PATH"
 # ┌────────┐
 # │ editor │
 # └────────┘
