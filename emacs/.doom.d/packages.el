@@ -1,5 +1,12 @@
 ;; -*- no-byte-compile: t; -*-
 ;;; $DOOMDIR/packages.el
+;;; 这里用来安装插件
+;;; cmd:doom install
+;;; doom sync
+;;; doom upgrade
+
+
+
 
 ;; To install a package with Doom you must declare them here and run 'doom sync'
 ;; on the command line, then restart Emacs for the changes to take effect -- or
