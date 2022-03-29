@@ -1,9 +1,12 @@
 ;; -*- no-byte-compile: t; -*-
 ;;; $DOOMDIR/packages.el
 ;;; 这里用来安装插件
-;;; cmd:doom install
+;;; cmd:
+;;; doom install
 ;;; doom sync
 ;;; doom upgrade
+;; (package! )
+(package! rime)
 
 
 
