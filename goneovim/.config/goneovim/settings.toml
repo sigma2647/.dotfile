@@ -41,12 +41,14 @@ FileOpenCmd = ":e"
 ## In MacOS, 
  FontFamily = "MesloLGS NF"
  #FontFamily = "JetBrains Mono"
+ #FontFamily = "MesloLGSDZ Nerd Font Mono"
+ #FontFamily = "MesloLGLDZ Nerd Font Mono"
 ## In Linux
 # FontFamily = "Consolas"
 ## In Windows
 # FontFamily = "Windows"
 ## Fontsize is
- FontSize = 15
+ FontSize = 17
 ## linespace is
  #Linespace = 27
 
