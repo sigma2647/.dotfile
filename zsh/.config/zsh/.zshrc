@@ -108,6 +108,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 
+
 # visidata
 export PATH="/usr/local/visidata/bin:$PATH"
 
