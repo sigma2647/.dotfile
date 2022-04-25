@@ -39,10 +39,9 @@ FileOpenCmd = ":e"
 ## Of course, these settings can also be changed by setting the guifont and linespace on the Neovim side.
 ## Fontfamily is
 ## In MacOS, 
- FontFamily = "MesloLGS NF"
+ #FontFamily = "MesloLGS NF"
  #FontFamily = "JetBrains Mono"
- #FontFamily = "MesloLGSDZ Nerd Font Mono"
- #FontFamily = "MesloLGLDZ Nerd Font Mono"
+ FontFamily = "MesloLGLDZ Nerd Font Mono"
 ## In Linux
 # FontFamily = "Consolas"
 ## In Windows
