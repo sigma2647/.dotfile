@@ -85,11 +85,11 @@
         },
         {
             "before": ["<tab>"],
-            "commands": [":tabnext"]
+            "commands": [":bnext"]
         },
         {
             "before": ["<s-tab>"],
-            "commands": [":tabnext"]
+            "commands": [":bprevious"]
         },
         {
             "before": ["<leader>", "h"],
