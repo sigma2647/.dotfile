@@ -10,10 +10,29 @@ set icons true
 
 
 map gD cd ~/Downloads
-map S push :shell<enter>$SHELL<enter>
+map gm cd ~/quant_alpha
+map gp cd ~/play
+map gc cd ~/.config
+
+map S push :shell<enter>$SHELL<enter>  # 打开当前路径
+
+
 
 # TODO : Add more keybindings
 # TODO : add unzip command
 # TODO : add unrar command
 # TODO : add tar command
-map gU unzip -o
+map gU unzip -o  # 解压文件
+
+
+cmd mkdir ${{
+    printf "Enter a directory name: "
+    read ans
+    mkdir $ans
+}}
+
+
+
+map a mkdir
+map D delete  # 删除文件或目录
+map x cut
