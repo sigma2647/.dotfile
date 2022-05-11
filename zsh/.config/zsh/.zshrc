@@ -123,7 +123,7 @@ alias vo='goneovim'
 #alias v='vimr'
 alias ra='ranger'
 alias enableproxy='export export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;' # 设置终端代理
-alias enableproxyMini='export https_proxy=http://127.0.0.1:33210 http_proxy=http://127.0.0.1:33210 all_proxy=socks5://127.0.0.1:33211' 
+alias enableproxyMini='export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890' 
 
 alias disableproxy='unset http_proxy https_proxy' # 取消终端代理
 alias ip='curl cip.cc' # 测试

@@ -11,6 +11,9 @@ import pandas as pd
 import numpy as np
 import visidata as vd
 
+pd.set_option('expand_frame_repr', False)
+
+
 vd = vd.view_pandas
 
 # ipython = get_ipython()
