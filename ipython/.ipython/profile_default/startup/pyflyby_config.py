@@ -4,8 +4,8 @@
 ~/.ipython/profile_default/startup
 """
 
-from IPython import get_ipython
-import subprocess
+# from IPython import get_ipython
+# import subprocess
 
 import pandas as pd
 import numpy as np
