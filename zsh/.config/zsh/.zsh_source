@@ -1,7 +1,12 @@
 # ┌────────┐
 # │ source │
 # └────────┘
+
+# goneovim
 export PATH=$PATH:/Applications/goneovim.app/Contents/MacOS
+
+# visidata
+export PATH="/usr/local/visidata/bin:$PATH"
 
 
 # ┌──────────┐

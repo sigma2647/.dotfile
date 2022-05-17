@@ -109,31 +109,7 @@ export LANG=en_US.UTF-8
 
 
 
-# visidata
-export PATH="/usr/local/visidata/bin:$PATH"
 
-# ┌───────┐
-# │ alias │
-# └───────┘
-
-#alias v='nvim'
-alias v='nvim'
-alias vv='nvim'
-alias vo='goneovim'
-#alias v='vimr'
-alias ra='ranger'
-alias enableproxy='export export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;' # 设置终端代理
-alias enableproxyMini='export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890' 
-
-alias disableproxy='unset http_proxy https_proxy' # 取消终端代理
-alias ip='curl cip.cc' # 测试
-alias x='tmux'
-alias xa='tmux attach'
-alias c='z'
-alias vpython='ipython --TerminalInteractiveShell.editing_mode=vi'
-alias g='lazygit'
-alias jp='jupyter'
-alias dot='~/dotfile'
 
 # ┌────────┐
 # │ export │
