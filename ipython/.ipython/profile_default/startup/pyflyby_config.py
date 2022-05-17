@@ -10,6 +10,12 @@
 import pandas as pd
 import numpy as np
 import visidata as vd
+# from rich import print
+from rich import pretty
+from rich.traceback import install
+
+pretty.install()
+install()
 
 pd.set_option('expand_frame_repr', False)
 
