@@ -1,3 +1,4 @@
+#zmodload zsh/zprof
 # ┌──────┐
 # │ main │
 # └──────┘
