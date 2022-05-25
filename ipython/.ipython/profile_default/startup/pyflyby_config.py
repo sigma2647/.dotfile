@@ -40,3 +40,9 @@ vd = vd.view_pandas
             # stdourr=subprocess.DEVNULL,
     # )
 
+# 利润计算
+def percent(original,current):
+    percent = (current-original)/original*100
+    
+    print('收益率为 %s' % (percent), '%')
+
