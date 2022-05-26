@@ -13,6 +13,8 @@ map gD cd ~/Downloads
 map gm cd ~/quant_alpha
 map gp cd ~/play
 map gc cd ~/.config
+#map go cd ~/Users/lawrencexing/Library/Mobile\ Documents/iCloud\~md\~obsidian/Documents/MarkDown/wikipage
+map go cd /Users/lawrencexing/Library/Mobile\ Documents/iCloud\~md\~obsidian/Documents/MarkDown
 
 map S push :shell<enter>$SHELL<enter>  # 打开当前路径
 
