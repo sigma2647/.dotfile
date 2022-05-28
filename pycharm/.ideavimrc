@@ -8,10 +8,23 @@ syntax on
 set number relativenumber
 set hlsearch
 set ignorecase
+set ignorecase smartcase
 set smartcase
 set nu
 set clipboard=unnamedplus
+set timeoutlen=350
+set visualbell
+set noerrorbells
 
+
+
+""" The Leader Key
+let mapleader = " "
+let mapleader = ","
+nmap <space> <Leader>
+
+
+"let mapleader = " "
 
 
 
@@ -24,9 +37,10 @@ imap jk <Esc>
 nmap S :w<cr>
 imap ; <Esc>
 imap ； <Esc>
-nmap <leader>E :e ~/.ideavimrc<CR>
-nmap <leader>rr :source ~/.ideavimrc<CR>
-noremap <leader>h :nohlsearch<CR>
+nnoremap <Space>E :e ~/.ideavimrc<CR>
+" Reload .ideavimr
+nnoremap <mapleader>s :source ~/.ideavimrc | echo "source complete"<CR>
+nnoremap <Space>h :nohlsearch<CR>
 nmap \ :
 
 nmap H ^
@@ -40,7 +54,7 @@ vmap L $
 " ==================================================
 " 文件树
 " ==================================================
-nnoremap <Leader>e :NERDTreeToggle<CR>
+"nnoremap <Leader>e :NERDTreeToggle<CR>
 " ==================================================
 " TAB导航
 " ==================================================
@@ -56,8 +70,6 @@ vnoremap > >gv
 
 " ==================================================
 " 多窗口操作
-" ==================================================
-inoremap <C-h> <Left>
 inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 inoremap <C-l> <Right>
@@ -66,7 +78,7 @@ inoremap <C-l> <Right>
 vnoremap = :action ReformatCode<CR>
 
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
-"" Map \r to the Reformat Code action
+"" Map \r to the Reformat Code actioj
 "map \r <Action>(ReformatCode)
 
 "" Map <leader>d to start debug
@@ -83,10 +95,6 @@ set NERDTree
 let g:NERDTreeMapActivateNode='l'
 let g:NERDTreeMapJumpParent='h'
 
-""" The Leader Key
-nnoremap <SPACE> <Nop>
-let mapleader=" "
-let leader=" "
 
 
 """ 导航 Navigated
@@ -102,8 +110,8 @@ noremap <c-j> <c-w>j
 noremap <c-k> <c-w>k
 noremap <c-l> <c-w>l
 
-nnoremap <c-\> :action SplitVertically<CR>
-nnoremap <c--> :action SplitHorizontally<CR>
+nnoremap `v :action SplitVertically<CR>
+nnoremap `b :action SplitHorizontally<CR>
 
 
 """ pycharm action
@@ -112,15 +120,19 @@ nnoremap <Leader>n :action NextWindow<CR>
 ""nnoremap <Leader>p :action GotoFile<CR>
 nnoremap <c-p> :action GotoFile<CR>
 nnoremap <c-z> :action ToggleDistractionFreeMode<CR>
-nnoremap <Leader>r :action Run<CR>
+nnoremap ,r :action Run<CR>
 
 nnoremap <Leader>tt :action ActivateTerminalToolWindow<CR>
 ""nnoremap <Leader>t :action Terminal.OpenInTerminal<CR>
 ""nnoremap <Leader>e :action ActivateProjectToolWindow<CR>
-NERDTreeToggle
+"NERDTreeToggle
 ""nnoremap <Leader>e :action FileMenu<CR> "导航菜单
-
-
+nnoremap gp :action QuickJavaDoc<CR>
+nnoremap <Leader>k :action NotebookInsertCellAboveAction<CR>
+nnoremap <Leader>j :action NotebookInsertCellBelowAction<CR>
+nnoremap <Leader>fr :action RecentFiles<CR>
+nnoremap <Leader>ff :action SearchEverywhere<CR>
+nnoremap <Leader>fg :action FindInPath<CR>
 "Help action
 ":actionlist git
 ":actionlist *
