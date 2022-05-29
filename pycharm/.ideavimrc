@@ -1,8 +1,18 @@
+" ┌──────────────┐
+" │ idea plugins │
+" └──────────────┘
+" IdeaVimExtension
+
 "" Source your .vimrc
 "source ~/.vimrc
 "" -- Suggested options --
 " Show a few lines of context around the cursor. Note that this makes the
 " text scroll if you mouse-click near the start or end of the window.
+"
+"
+Plug 'tpope/vim-surround'
+Plug 'preservim/nerdntee'
+
 set scrolloff=5
 syntax on
 set number relativenumber
@@ -11,21 +21,19 @@ set ignorecase
 set ignorecase smartcase
 set smartcase
 set nu
-set clipboard=unnamedplus
+set clipboard=unnamedplus "系统剪贴板
 set timeoutlen=350
 set visualbell
 set noerrorbells
+set keep-english-in-normal
+set which-key
+set notimeout
+
+
 
 
 
 """ The Leader Key
-let mapleader = " "
-let mapleader = ","
-nmap <space> <Leader>
-
-
-"let mapleader = " "
-
 
 
 " Do incremental searching.
@@ -37,16 +45,20 @@ imap jk <Esc>
 nmap S :w<cr>
 imap ; <Esc>
 imap ； <Esc>
-nnoremap <Space>E :e ~/.ideavimrc<CR>
-" Reload .ideavimr
-nnoremap <mapleader>s :source ~/.ideavimrc | echo "source complete"<CR>
-nnoremap <Space>h :nohlsearch<CR>
 nmap \ :
 
 nmap H ^
 nmap L $
+
+" ┌─────────────┐
+" │ visual mode │
+" └─────────────┘
+
 vmap H ^
 vmap L $
+
+vmap p "_dP
+
 
 
 
@@ -114,6 +126,34 @@ nnoremap `v :action SplitVertically<CR>
 nnoremap `b :action SplitHorizontally<CR>
 
 
+" ┌─────┐
+" │ lsp │
+" └─────┘
+nmap gt :action GotoTypeDeclaration<CR>
+
+
+
+" ┌───────────┐
+" │ leaderkey │
+" └───────────┘
+let mapleader = " "
+
+" Reload .ideavimr
+nmap <leader>s :source ~/.ideavimrc | echo "source complete"<CR>
+
+nmap <leader>E :e ~/.ideavimrc<CR>
+nmap <leader>h :nohlsearch<CR>
+
+" 查找文件
+let g:WhichKeyDesc_FindOrFormat_FindFile = "<leader>ff FindFile"
+nmap <leader>ff :action GotoFile<CR>
+
+
+let g:WhichKeyDesc_ToggleExplorerorExtract = "<leader>e ToggleExploreror"
+nmap <leader>e :action ActivateProjectToolWindow<CR>
+
+
+
 """ pycharm action
 nnoremap <Leader>o :action EditSourceInNewWindow<CR>
 nnoremap <Leader>n :action NextWindow<CR>
@@ -124,14 +164,12 @@ nnoremap ,r :action Run<CR>
 
 nnoremap <Leader>tt :action ActivateTerminalToolWindow<CR>
 ""nnoremap <Leader>t :action Terminal.OpenInTerminal<CR>
-""nnoremap <Leader>e :action ActivateProjectToolWindow<CR>
 "NERDTreeToggle
 ""nnoremap <Leader>e :action FileMenu<CR> "导航菜单
 nnoremap gp :action QuickJavaDoc<CR>
 nnoremap <Leader>k :action NotebookInsertCellAboveAction<CR>
 nnoremap <Leader>j :action NotebookInsertCellBelowAction<CR>
 nnoremap <Leader>fr :action RecentFiles<CR>
-nnoremap <Leader>ff :action SearchEverywhere<CR>
 nnoremap <Leader>fg :action FindInPath<CR>
 "Help action
 ":actionlist git
