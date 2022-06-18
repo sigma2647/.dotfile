@@ -29,13 +29,23 @@ export PATH=$PATH:/usr/local/neovim/bin
 # │ 若启动慢则使用上方代码  │
 # └─────────────────────────┘
 
-if [ -f "/opt/homebrew/anaconda3/etc/profile.d/conda.sh" ]; then
-    . "/opt/homebrew/anaconda3/etc/profile.d/conda.sh"
+#if [ -f "/opt/homebrew/anaconda3/etc/profile.d/conda.sh" ]; then
+    #. "/opt/homebrew/anaconda3/etc/profile.d/conda.sh"
+#else
+    #export PATH="/opt/homebrew/anaconda3/bin : $PATH"
+#fi
+
+if test $USER = "lawrencexing"; then
+    if [ -f "/opt/homebrew/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/opt/homebrew/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/opt/homebrew/anaconda3/bin : $PATH"
+    fi
+    #echo "Hello foo."
+    conda activate quant
 else
-    export PATH="/opt/homebrew/anaconda3/bin : $PATH"
+    #echo "You are not foo."
 fi
 
-
-conda activate quant
 
 
