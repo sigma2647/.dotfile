@@ -16,11 +16,17 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # ┌─────────────────────────┐
 # │ 若启动慢则使用上方代码  │
 # └─────────────────────────┘
-
-if [ -f "/opt/homebrew/anaconda3/etc/profile.d/conda.sh" ]; then
-    . "/opt/homebrew/anaconda3/etc/profile.d/conda.sh"
+if test $USER = "lawrencexing"; then
+    if [ -f "/opt/homebrew/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/opt/homebrew/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/opt/homebrew/anaconda3/bin : $PATH"
+    fi
+    echo "Hello foo."
 else
-    export PATH="/opt/homebrew/anaconda3/bin : $PATH"
+    echo "You are not foo."
 fi
+
+
 
 conda activate quant
