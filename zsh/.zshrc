@@ -27,7 +27,11 @@ source $HOME/.config/zsh/.zsh_source
 source $HOME/.config/zsh/.zsh_alias
 
 
+# ┌──────────┐
+# │ Function │
+# └──────────┘
 
+source $HOME/.config/zsh/.zsh_function
 
 
 # git remote add origin git@github.com:user/repo.git
