@@ -21,7 +21,8 @@ alias vpython='ipython --TerminalInteractiveShell.editing_mode=vi'
 alias g='lazygit'
 alias jp='jupyter'
 alias dot='~/dotfile'
-alias lv=$HOME'/.local/bin/lvim'
+#alias lv=$HOME'/.local/bin/lvim'
+alias lv=lvim
 
 alias math="python ~/play/math1.py"
 
