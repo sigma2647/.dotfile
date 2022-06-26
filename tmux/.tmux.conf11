@@ -1,0 +1,54 @@
+unbind C-b
+set-option -g prefix `
+bind ` send-prefix
+
+
+
+
+
+# Shell
+set -g default-command $SHELL
+set -g default-shell $SHELL
+
+bind r source-file ~/.tmux.conf \; display "~/.tmux.conf reloaded"
+
+
+
+
+unbind %
+unbind '"'
+bind b split-window -v -c '#{pane_current_path}' # 当前路径 垂直分割窗口
+bind v split-window -h -c '#{pane_current_path}' # 当前路径 水平分割窗口
+bind c new-window -c "#{pane_current_path}"      # 当前路径 水平分割窗口
+
+unbind c-]
+
+# command mode
+bind : command-prompt
+
+# Kill panes
+bind x kill-pane
+
+# Toggle Status 
+bind t set status
+
+
+
+set-option -g status-position bottom
+
+set -g base-index 1
+set -s escape-time 0
+
+set -g status-left ' '
+set -g status-right ''
+
+
+set -g status-fg white
+set -g status-bg black
+
+setw -g window-status-current-format '#[underscore,bold]#I #W'
+setw -g window-status-format '#I #W'
+
+# bind-key R source-file ~/.tmux.conf \; display-message "Config reloaded..."
+
+set -g status-justify centre
