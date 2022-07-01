@@ -161,9 +161,8 @@
   "minimal-advanced@@font-smallest": 10,
   "minimal-style@@title-alignment": "title-align-body",
   "minimal-style@@show-grabber": false,
-  "minimal-style@@ax1@@dark": "#5095CF",
-  "minimal-style@@ax2@@dark": "#0A85D9",
-  "minimal-style@@link-weight": 500,
+  "minimal-style@@ax1@@dark": "#BF95F9",
+  "minimal-style@@link-weight": 700,
   "minimal-style@@h1": "1.7em",
   "minimal-style@@h1-variant": "normal",
   "minimal-style@@h1-l": false,
@@ -201,5 +200,12 @@
   "minimal-style@@tag-color@@light": "#FFFFFF",
   "minimal-style@@tag-color@@dark": "#020202",
   "minimal-style@@tag-bg2@@dark": "#6200F9",
-  "minimal-style@@h2-color@@dark": "#6A6AF4"
+  "minimal-style@@h2-color@@dark": "#6A6AF4",
+  "minimal-style@@tx1@@dark": "#FBFBFD",
+  "minimal-style@@ax2@@dark": "#BF95F9",
+  "minimal-style@@ig-adjust-reading": -0.65,
+  "minimal-style@@ig-adjust-edit": -1,
+  "minimal-style@@active-line-on": true,
+  "minimal-style@@active-line-bg@@light": "#2EBD8D",
+  "minimal-style@@active-line-bg@@dark": "#38345587"
 }
