@@ -25,4 +25,4 @@ alias dot='~/dotfile'
 alias lv=lvim
 
 alias math="python ~/play/math1.py"
-
+alias l=lf
