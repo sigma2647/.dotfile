@@ -139,5 +139,12 @@ just download github desktop
 │ zsh │
 └─────┘
 ## 优化zsh启动时间
-
 [优化zsh](https://fly.meow-2.com/post/records/conda-faster.html)
+
+┌────────┐
+│ 输入法 │
+└────────┘
+
+## imselect
+[im-select](https://github.com/daipeihust/im-select)
+
