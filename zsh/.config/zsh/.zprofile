@@ -24,8 +24,6 @@ if test $USER = "lawrencexing"; then
     else
         export PATH="/opt/homebrew/anaconda3/bin : $PATH"
     fi
-if test $USER = "ubuntu"; then
-    echo 'hi'
 else
     # mac boook
     #eval "$(/usr/local/bin/brew)"
