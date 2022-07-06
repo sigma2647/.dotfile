@@ -48,6 +48,8 @@ if test $USER = "lawrencexing"; then
     fi
     #echo "Hello foo."
     conda activate quant
+if test $USER = "ubuntu"; then
+    echo 'hi'
 else
     #echo "You are not foo."
 fi
