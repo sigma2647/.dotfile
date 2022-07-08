@@ -32,6 +32,13 @@ elif test $USER = "lawrence"; then  # mac pro
         export PATH="/usr/local/anaconda3/bin:$PATH"
     fi
 
+elif test $USER = "ubuntu"; then  # oracle
+    if [ -f "$HOME/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "$HOME/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="$HOME/anaconda3/bin:$PATH"
+    fi
+
 else
     # mac boook
     #eval "$(/usr/local/bin/brew)"
