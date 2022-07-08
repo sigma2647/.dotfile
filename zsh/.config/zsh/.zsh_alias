@@ -6,6 +6,7 @@
 alias v='nvim'
 alias vv='nvim'
 alias vo='goneovim'
+alias nv='neovide'
 #alias v='vimr'
 alias ra='ranger'
 alias enableproxy='export export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;' # 设置终端代理
