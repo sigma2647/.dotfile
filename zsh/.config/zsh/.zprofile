@@ -16,7 +16,7 @@
 # │ 若启动慢则使用上方代码  │
 # └─────────────────────────┘
 
-if test $USER = "lawrencexing"; then
+if test $USER = "lawrencexing"; then  # mac mini
     # macmini
     eval "$(/opt/homebrew/bin/brew shellenv)"
     if [ -f "/opt/homebrew/anaconda3/etc/profile.d/conda.sh" ]; then
