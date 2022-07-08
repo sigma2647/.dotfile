@@ -24,6 +24,14 @@ if test $USER = "lawrencexing"; then
     else
         export PATH="/opt/homebrew/anaconda3/bin : $PATH"
     fi
+
+elif test $USER = "lawrence"; then  # mac pro
+    if [ -f "/usr/local/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/usr/local/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/usr/local/anaconda3/bin:$PATH"
+    fi
+
 else
     # mac boook
     #eval "$(/usr/local/bin/brew)"
@@ -31,4 +39,5 @@ fi
 
 
 
-#conda activate quant
+conda activate quant
+
