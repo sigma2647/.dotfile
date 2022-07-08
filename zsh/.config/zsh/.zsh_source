@@ -15,7 +15,9 @@ export PATH="/usr/local/visidata/bin:$PATH"
 
 export PATH=$PATH:/usr/local/neovim/bin
 
-# go
+# ┌─────────┐
+# │ go lang │
+# └─────────┘
 export PATH=/usr/local/go/bin:$PATH
 export PATH=$HOME/go/bin:$PATH
 
