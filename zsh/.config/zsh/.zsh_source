@@ -17,6 +17,8 @@ export PATH=$PATH:/usr/local/neovim/bin
 
 # go
 export PATH=/usr/local/go/bin:$PATH
+export PATH=$HOME/go/bin:$PATH
+
 
 # ┌─────────────────────────┐
 # │ 若启动慢则使用上方代码  │
