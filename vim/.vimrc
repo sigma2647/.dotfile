@@ -7,12 +7,11 @@
 "
 "
 "
-" I like using H and L for beginning/end of line
-nmap H ^
-nmap L $
-vmap H ^
-vmap L $
 
+
+" ┌─────────┐
+" │ Options │
+" └─────────┘
 
 set mouse=a
 set notermguicolors
@@ -40,9 +39,25 @@ set autoindent
 set fileformat=unix
 
 
+" ┌──────┐
+" │ edit │
+" └──────┘
 
+nmap H ^
+nmap L $
+vmap H ^
+vmap L $
+
+
+" Insert
 imap jk <C-[>
-" nmap <space> :
+imap <C-a> <esc>I
+imap <C-e> <esc>A
+imap <C-b> <Left>
+imap <C-f> <Right>
+
+
+
 nmap \ :
 imap ; <C-[>
 map S :w<CR>
@@ -53,6 +68,15 @@ noremap <LEADER><CR> :nohlsearch<CR>
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 
+" ┌──────────┐
+" │ Cmd Mode │
+" └──────────┘
+cmap <C-b> <Left>
+cmap <C-f> <Right>
+cmap <C-a> <Home>
+cmap <C-e> <End>
+cmap <C-d> <Del>
+cmap <C-h> <BS>
 
 "number 1: moving text 
 "vnoremap K :m '<-2<CR>gv=gv
@@ -73,7 +97,7 @@ let g:indent_guides_enable_on_vim_startup = 1
 
 
 " NERDTree快捷键
-map <silent> <C-e> :NERDTreeToggle<CR>
+" map <silent> <C-e> :NERDTreeToggle<CR>
 
 " Find files using Telescope command-line sugar.
 "nnoremap <leader>ff <cmd>Telescope find_files<cr>
