@@ -32,7 +32,7 @@ elif test $USER = "lawrence"; then  # mac pro
         export PATH="/usr/local/anaconda3/bin:$PATH"
     fi
 
-elif test $USER = "ubuntu"; then  # oracle
+elif test $USER = "root"; then  # oracle
     if [ -f "$HOME/anaconda3/etc/profile.d/conda.sh" ]; then
         . "$HOME/anaconda3/etc/profile.d/conda.sh"
     else
