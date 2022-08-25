@@ -39,17 +39,17 @@ export PATH=$HOME/.emacs.d/bin:$PATH
     #export PATH="/opt/homebrew/anaconda3/bin : $PATH"
 #fi
 
-if test $USER = "lawrencexing"; then
-    if [ -f "/opt/homebrew/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/opt/homebrew/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/opt/homebrew/anaconda3/bin : $PATH"
-    fi
-    #echo "Hello foo."
-    conda activate quant
-else
-    #echo "You are not foo."
-fi
+# if test $USER = "lawrencexing"; then
+#     if [ -f "/opt/homebrew/anaconda3/etc/profile.d/conda.sh" ]; then
+#         . "/opt/homebrew/anaconda3/etc/profile.d/conda.sh"
+#     else
+#         export PATH="/opt/homebrew/anaconda3/bin : $PATH"
+#     fi
+#     #echo "Hello foo."
+#     conda activate quant
+# else
+#     #echo "You are not foo."
+# fi
 
 
 
