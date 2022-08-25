@@ -46,3 +46,7 @@ def percent(original,current):
     
     print('收益率为 %s' % (percent), '%')
 
+def P(feather):
+    df = pd.read_feather(feather)
+    return df
+
