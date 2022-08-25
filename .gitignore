@@ -6,3 +6,5 @@
 /.DS_Store
 zsh/.config/lazygit/
 zsh/.config/nvim/
+zsh/.config/htop
+ipython/.ipython/
