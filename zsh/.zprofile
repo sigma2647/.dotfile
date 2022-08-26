@@ -32,3 +32,4 @@ source $HOME/.config/zsh/.zprofile
 #unset __conda_setup
 
 #conda activate quants
+eval "$(/opt/homebrew/bin/brew shellenv)"
