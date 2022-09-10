@@ -54,7 +54,7 @@ nix() {
   fi
   if [ "$1" = rm ]; then
     shift
-    command nix-env -r "$@"
+    command nix-env -e "$@"
   fi
   if [ "$1" = ls ]; then
     shift
