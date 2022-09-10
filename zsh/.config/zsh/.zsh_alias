@@ -39,11 +39,27 @@ alias emacs3='emacs -q -l ~/.emacs3.d/init.el'
 # ┌─────┐
 # │ nix │
 # └─────┘
-alias nix='nix-env'
-alias nix_ls='nix-env -q'
-alias nix_rm='nix-env -e'
+# alias nix='nix-env'
+# alias nix_ls='nix-env -q'
+# alias nix_rm='nix-env -e'
 nix_install(){
     nix-env -iA nixpkgs.$1
 }
 
 
+nix() {
+  if [ "$1" = install ]; then
+    shift
+    command nix-env -iA nixpkgs."$@"
+  fi
+  if [ "$1" = rm ]; then
+    shift
+    command nix-env -r "$@"
+  fi
+  if [ "$1" = ls ]; then
+    shift
+    command nix-env -q
+  fi
+  # command nix-env "$@"
+  # command echo 'sdf'
+}
