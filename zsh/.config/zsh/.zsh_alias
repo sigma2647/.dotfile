@@ -3,8 +3,7 @@
 # └───────┘
 
 #alias v='nvim'
-alias v='nvim'
-alias vv='nvim'
+alias v='nvim' alias vv='nvim'
 alias vo='goneovim'
 alias nv='neovide'
 #alias v='vimr'
@@ -36,4 +35,14 @@ alias e='emacs'
 alias emacs1='emacs -q -l ~/.emacs1.d/init.el'
 alias emacs2='emacs -q -l ~/.emacs2.d/init.el'
 alias emacs3='emacs -q -l ~/.emacs3.d/init.el'
+
+# ┌─────┐
+# │ nix │
+# └─────┘
+alias nix='nix-env'
+# alias nix_install='nix-env -iA nixpkgs.'
+nix_install(){
+    nix-env -iA nixpkgs.$1
+}
+
 
