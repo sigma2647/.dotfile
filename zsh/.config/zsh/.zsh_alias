@@ -39,14 +39,6 @@ alias emacs3='emacs -q -l ~/.emacs3.d/init.el'
 # ┌─────┐
 # │ nix │
 # └─────┘
-# alias nix='nix-env'
-# alias nix_ls='nix-env -q'
-# alias nix_rm='nix-env -e'
-nix_install(){
-    nix-env -iA nixpkgs.$1
-}
-
-
 nix() {
   if [ "$1" = install ]; then
     shift
