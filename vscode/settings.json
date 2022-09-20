@@ -2,6 +2,7 @@
 // https://code.visualstudio.com/docs/getstarted/keybindings
 // https://github.com/VSCodeVim/Vim
 // 
+// https://sourcegraph.com/github.com/macintacos/dotfiles/-/blob/vscode/settings.json?L773
 
 {
     "editor.inlineSuggest.enabled": true,
@@ -22,7 +23,6 @@
     "explorer.compactFolders": false,  // compact folders in explorer
     "editor.minimap.enabled": true,
     "editor.lineNumbers":"relative",  // 相对行号 
-    "vim.highlightedyank.enable": true,
 
 
     // ┌──────────┐
@@ -63,6 +63,8 @@
     "vim.leader": " ",
     "vim.smartRelativeLine": true,
     "vim.useSystemClipboard": true,
+    "vim.highlightedyank.enable": true,
+    "vim.camelCaseMotion.enable": true,
 
     // 输入法切换
     "vim.autoSwitchInputMethod.enable": true,
@@ -140,6 +142,10 @@
             "commands": ["editor.action.referenceSearch.trigger"]
         },
         {
+            "before": ["Y"],
+            "after": ["y", "$"]
+        },
+        {
             "before": ["H"],
             "after": ["^"]
         },
@@ -150,7 +156,23 @@
         {
             "before": ["`b"],
             "after": [":vs"]
-        }
+        },
+        {
+            "before": ["u"],
+            "commands": [
+                {
+                "command": "undo"
+                }
+            ]
+        },
+        {
+            "before": ["<C-r>"],
+            "commands": [
+                {
+                "command": "redo"
+                }
+            ]
+        },
     ],
     "vim.insertModeKeyBindings": [
         {
