@@ -149,6 +149,22 @@
     ],
     "vim.insertModeKeyBindings": [
         {
+            "before": ["<c-b>"],
+            "commands": ["cursorLeft"]
+        },
+        {
+            "before": ["<c-f>"],
+            "commands": ["cursorRight"]
+        },
+        {
+            "before": ["<C-e>"],
+            "commands": ["cursorEnd"]
+        },
+        {
+            "before": ["<C-a>"],
+            "commands": ["cursorHome"]
+        },
+        {
             "before": [";"],
             "after": ["<Esc>"]
         },
