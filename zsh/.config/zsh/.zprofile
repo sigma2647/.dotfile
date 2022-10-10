@@ -26,10 +26,15 @@ if test $USER = "lawrencexing"; then  # mac mini
     fi
 
 elif test $USER = "lawrence"; then  # mac pro
-    if [ -f "/usr/local/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/usr/local/anaconda3/etc/profile.d/conda.sh"
+    # if [ -f "/usr/local/anaconda3/etc/profile.d/conda.sh" ]; then
+    #     . "/usr/local/anaconda3/etc/profile.d/conda.sh"
+    # else
+    #     export PATH="/usr/local/anaconda3/bin:$PATH"
+    # fi
+    if [ -f "$HOME/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "$HOME/anaconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/usr/local/anaconda3/bin:$PATH"
+        export PATH="$HOME/anaconda3/bin:$PATH"
     fi
 
 elif test $USER = "root"; then  # oracle
