@@ -1,4 +1,4 @@
-q# Basic Setting
+# Basic Setting
 set hidden true
 set ignorecase true
 set icons true
@@ -15,7 +15,7 @@ map gf cd ~/quant_alpha_v5/notebook/factor/factors_tomato
 map gp cd ~/play
 map gc cd ~/.config
 map gv cd ~/.config/nvim
-map go cd ~/note/MarkDown
+map go cd ~/note/markdown
 map gl cd ~/note/logseq
 
 
