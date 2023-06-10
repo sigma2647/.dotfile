@@ -43,7 +43,7 @@ alias emacs_doom='emacs -q -l ~/.emacs.d.doom/early-init.el'
 nix() {
   if [ "$1" = add ]; then
     shift
-    command nix-shell -p "$@"
+    command nix-env -iA nixos."$@"
   fi
   if [ "$1" = rm ]; then
     shift
