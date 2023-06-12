@@ -9,7 +9,9 @@ set icons true
 #map S 
 
 
-map gD cd ~/Downloads
+
+map gd cd ~/Downloads
+map gD cd ~/dotfile
 map gm cd ~/quant_alpha_v5
 map gf cd ~/quant_alpha_v5/notebook/factor/factors_tomato
 map gp cd ~/play
@@ -20,6 +22,10 @@ map gl cd ~/note/logseq
 
 
 map S push :shell<enter>$SHELL<enter>  # 打开当前路径
+map o push :shell<enter>open .<enter>
+map <c-g> push :shell<enter>lazygit<enter>  # 打开当前路径
+
+
 
 
 

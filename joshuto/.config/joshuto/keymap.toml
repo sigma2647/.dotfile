@@ -3,10 +3,10 @@
 keymap = [
     { keys = [ "escape" ], command = "quit" },
 
-    # { keys = [ "'" ],		command = ":shell " },
-    { keys = [ "S" ],		command = "shell zsh" },
-    { keys = [ "ctrl+h" ],		command = "shell lazygit" },
-    { keys = [ "a" ],		command = ":mkdir " },
+    # { keys = [ "'" ],    command = ":shell " },
+    # { keys = [ "S" ],    command = "shell zsh" },
+    { keys = [ "ctrl+g" ], command = "shell lazygit" },
+    { keys = [ "a" ],      command = ":mkdir " },
 
     # vim-like keybindings
     { keys = ["j"], command = "cursor_move_down" },
@@ -52,12 +52,12 @@ keymap = [
     # { keys = [ "8" ],		command = "numbered_command 8" },
     # { keys = [ "9" ],		command = "numbered_command 9" },
     #
-    arrow keys
-    { keys = [ "arrow_up" ],	command = "cursor_move_up" },
-    { keys = [ "arrow_down" ],	command = "cursor_move_down" },
-    { keys = [ "arrow_left" ],	command = "cd .." },
-    { keys = [ "arrow_right" ],	command = "open" },
-    { keys = [ "\n" ],		command = "open" },
+    # arrow keys
+    # { keys = [ "arrow_up" ],	command = "cursor_move_up" },
+    # { keys = [ "arrow_down" ],	command = "cursor_move_down" },
+    # { keys = [ "arrow_left" ],	command = "cd .." },
+    # { keys = [ "arrow_right" ],	command = "open" },
+    # { keys = [ "\n" ],		command = "open" },
     # { keys = [ "home" ],		command = "cursor_move_home" },
     # { keys = [ "end" ],		command = "cursor_move_end" },
     # { keys = [ "page_up" ],		command = "cursor_move_page_up" },
@@ -73,8 +73,8 @@ keymap = [
     # { keys = [ "n" ],		command = "cd .." },
     # { keys = [ "h" ],		command = "cd -" },
     # { keys = [ "i" ],		command = "open" },
-    { keys = [ "g", "g" ],		command = "cursor_move_home" },
-    { keys = [ "G" ],		command = "cursor_move_end" },
+    # { keys = [ "g", "g" ],		command = "cursor_move_home" },
+    # { keys = [ "G" ],		command = "cursor_move_end" },
     # { keys = [ "r" ],		command = "open_with" },
     #
     # # { keys = [ "H" ],		command = "cursor_move_page_home" },
@@ -106,8 +106,8 @@ keymap = [
     #
     # { keys = [ "T" ],		command = ":touch " },
     #
-    # { keys = [ " " ],		command = "select --toggle=true" },
-    # { keys = [ "v" ],		command = "select --all=true --toggle=true" },
+    { keys = [ " " ],		command = "select --toggle=true" },
+    { keys = [ "v" ],		command = "select --all=true --toggle=true" },
     # { keys = [ "V" ],		command = "toggle_visual"},
     #
     # { keys = [ "w" ],		command = "show_tasks --exit-key=w" },
@@ -116,8 +116,8 @@ keymap = [
     # { keys = [ "c", "w" ],		command = "rename_keep_ext" },
     # { keys = [ "c", "n" ],		command = ":rename " },
     #
-    # { keys = [ ":" ],		command = ":" },
-    # { keys = [ ";" ],		command = ":" },
+    { keys = [ ":" ],		command = ":" },
+    { keys = [ ";" ],		command = ":" },
     #
     # { keys = [ "/" ],		command = ":search_inc " },
     # { keys = [ "f" ],		command = ":filter  " },
@@ -144,7 +144,7 @@ keymap = [
     # { keys = [ "m", "M" ],		command = "linemode sizemtime" },
     #
     # { keys = [ "g", "r" ],		command = "cd /" },
-    # { keys = [ "g", "d" ],		command = "cd ~/Downloads" },
+    { keys = [ "g", "d" ],		command = "cd ~/Downloads" },
     # { keys = [ "g", "D" ],		command = "cd ~/Desktop" },
     # { keys = [ "g", "e" ],		command = "cd /etc" },
     # { keys = [ "g", "h" ],		command = "cd ~/" },
