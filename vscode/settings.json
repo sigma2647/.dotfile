@@ -2,23 +2,20 @@
 // https://code.visualstudio.com/docs/getstarted/keybindings
 // https://github.com/VSCodeVim/Vim
 // 
-// https://sourcegraph.com/github.com/macintacos/dotfiles/-/blob/vscode/settings.json?L773
 
 {
     "editor.inlineSuggest.enabled": true,
     "github.copilot.enable": {
         "*": true,
         "yaml": false,
-        "plaintext": false,
+        "plaintext": true,
         "markdown": false,
-        "python": true
+        "python": false
     },
-    "editor.fontFamily": "MesloLGLDZ Nerd Font Mono",
-    "editor.fontSize": 13,
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontSize": 16,
     "terminal.integrated.inheritEnv": false,
     "files.autoSave": "onWindowChange",
-    "editor.cursorBlinking": "phase",
-    "editor.cursorSmoothCaretAnimation": true,
     "editor.bracketPairColorization.enabled": true,
     "explorer.compactFolders": false,  // compact folders in explorer
     "editor.minimap.enabled": true,
@@ -63,8 +60,6 @@
     "vim.leader": " ",
     "vim.smartRelativeLine": true,
     "vim.useSystemClipboard": true,
-    "vim.highlightedyank.enable": true,
-    "vim.camelCaseMotion.enable": true,
 
     // 输入法切换
     "vim.autoSwitchInputMethod.enable": true,
@@ -138,14 +133,6 @@
         //     ]
         // },
         {
-            "before": ["g", "r"],
-            "commands": ["editor.action.referenceSearch.trigger"]
-        },
-        {
-            "before": ["Y"],
-            "after": ["y", "$"]
-        },
-        {
             "before": ["H"],
             "after": ["^"]
         },
@@ -156,41 +143,9 @@
         {
             "before": ["`b"],
             "after": [":vs"]
-        },
-        {
-            "before": ["u"],
-            "commands": [
-                {
-                "command": "undo"
-                }
-            ]
-        },
-        {
-            "before": ["<C-r>"],
-            "commands": [
-                {
-                "command": "redo"
-                }
-            ]
-        },
+        }
     ],
     "vim.insertModeKeyBindings": [
-        {
-            "before": ["<c-b>"],
-            "commands": ["cursorLeft"]
-        },
-        {
-            "before": ["<c-f>"],
-            "commands": ["cursorRight"]
-        },
-        {
-            "before": ["<C-e>"],
-            "commands": ["cursorEnd"]
-        },
-        {
-            "before": ["<C-a>"],
-            "commands": ["cursorHome"]
-        },
         {
             "before": [";"],
             "after": ["<Esc>"]
@@ -241,6 +196,10 @@
             "after": ["$"]
         }
     ],
+    "tabnine.experimentalAutoImports": true,
+    "terminal.integrated.allowMnemonics": true,
+    "editor.cursorBlinking": "phase",
+    "editor.cursorSmoothCaretAnimation": "on",
 }
 
 
