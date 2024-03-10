@@ -20,6 +20,7 @@ local config = {
 		top = 20,
 		bottom = 20,
 	},
+	-- default_prog = { "/usr/local/bin/tmux" }, -- 默认启动方式 "zsh" "bash" "tmux"
 }
 
 -- This will hold the configuration.
