@@ -37,3 +37,5 @@ source $HOME/.config/zsh/.zsh_function
 # git remote add origin git@github.com:user/repo.git
 # git remote rm origin
 
+eval "$(lua ~/z.lua/z.lua  --init zsh)"    # ZSH 初始化
+
