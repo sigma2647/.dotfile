@@ -26,6 +26,10 @@ source $HOME/.config/zsh/.zsh_source
 # └───────┘
 source $HOME/.config/zsh/.zsh_alias
 
+# ┌──────┐
+# │ Keys │
+# └──────┘
+source $HOME/.config/zsh/.zsh_keymap
 
 # ┌──────────┐
 # │ Function │
@@ -39,3 +43,5 @@ source $HOME/.config/zsh/.zsh_function
 
 eval "$(lua ~/z.lua/z.lua  --init zsh)"    # ZSH 初始化
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
