@@ -29,7 +29,7 @@ source $HOME/.config/zsh/.zsh_alias
 # ┌──────┐
 # │ Keys │
 # └──────┘
-source $HOME/.config/zsh/.zsh_keymap
+# source $HOME/.config/zsh/.zsh_keymap
 
 # ┌──────────┐
 # │ Function │
