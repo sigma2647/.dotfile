@@ -29,7 +29,7 @@ source $HOME/.config/zsh/.zsh_alias
 # ┌──────┐
 # │ Keys │
 # └──────┘
-# source $HOME/.config/zsh/.zsh_keymap
+source $HOME/.config/zsh/.zsh_keymap
 
 # ┌──────────┐
 # │ Function │
@@ -44,4 +44,11 @@ source $HOME/.config/zsh/.zsh_function
 eval "$(lua ~/z.lua/z.lua  --init zsh)"    # ZSH 初始化
 
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+
+LFCD="~/.config/lf/lfcd.sh"                                #  pre-built binary, make sure to use absolute path
+if [ -f "$LFCD" ]; then
+    source "$LFCD"
+fi
+
+
