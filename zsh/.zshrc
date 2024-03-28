@@ -46,7 +46,7 @@ eval "$(lua ~/z.lua/z.lua  --init zsh)"    # ZSH 初始化
 
 
 
-LFCD="~/.config/lf/lfcd.sh"                                #  pre-built binary, make sure to use absolute path
+LFCD="$HOME/.config/lf/lfcd.sh"                                #  pre-built binary, make sure to use absolute path
 if [ -f "$LFCD" ]; then
     source "$LFCD"
 fi

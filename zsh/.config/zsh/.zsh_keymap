@@ -1,1 +1,1 @@
-bindkey -s '^o' 'lf\n'  # zsh
+bindkey -s '^o' 'lfcd\n'  # zsh
