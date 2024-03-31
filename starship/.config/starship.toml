@@ -1,6 +1,5 @@
 format = """
 $schema\
-$os\
 $username\
 $hostname\
 $directory\
@@ -10,6 +9,7 @@ $git_metrics\
 $fill\
 $cmd_duration $jobs $time\
 $linebreak
+$os\
 $character
 """
 # Get editor completions based on the config schema
@@ -38,12 +38,9 @@ show_always = true
 # Replace the '❯' symbol in the prompt with '➜'
 [character] # The name of the module we are configuring is 'character'
 #success_symbol = '[➜](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
-success_symbol = '[ ➜](bold green) '
-error_symbol = '[ ✗](#E84D44) '
+success_symbol = '[➜](bold green) '
+error_symbol = '[✗](#E84D44) '
 
-# Disable the package module, hiding it from the prompt completely
-[package]
-disabled = true
 [time]
 disabled = false
 time_format = "%R"                                      # Hour:Minute Format
@@ -92,3 +89,7 @@ symbol = " "
 min_time = 500
 format = 'underwent [$duration](bold yellow)'
 style = "fg:bright-white bg:18"
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
