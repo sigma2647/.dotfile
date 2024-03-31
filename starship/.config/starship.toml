@@ -1,4 +1,6 @@
 format = """
+$schema\
+$os\
 $username\
 $hostname\
 $directory\
@@ -15,6 +17,23 @@ $character
 
 # Inserts a blank line between shell prompts
 add_newline = true
+
+[os]
+#format = '[$symbol](bold white) '
+style = "bg:#1d2230"
+format = '[$symbol](bg:#1C3A5E fg:#8DFBD2)($style) '
+disabled = false
+
+[os.symbols]
+Windows = ' '
+Arch = '󰣇 '
+Ubuntu = ' '
+Macos = ' 󰀵 '
+
+[username]
+format = '[$user]($style) '
+disabled = false
+show_always = true
 
 # Replace the '❯' symbol in the prompt with '➜'
 [character] # The name of the module we are configuring is 'character'
@@ -35,13 +54,25 @@ format = '[[ 󱑍 $time ](bg:#1C3A5E fg:#8DFBD2)]($style)'
 symbol = ' '
 style = 'bold green'
 
-[directory]
-format = "[$path ]($style)"
-style = "fg:#E4E4E4 bg:#3B76F0"
 [git_branch]
-format = '[ $symbol$branch(:$remote_branch) ]($style)'
+#symbol = ' '
 symbol = " "
+#format = 'via [$symbol$branch]($style)'
+format = '[ $symbol$branch(:$remote_branch) ]($style)'
+# truncation_length = 4
+truncation_symbol = '…/'
+#style = 'bold green'
 style = "fg:#1C3A5E bg:#FCF392"
+
+# Shows current directory
+[directory]
+truncation_length = 8
+truncation_symbol = '…/'
+home_symbol = '󰋜 ~'
+read_only_style = '197'
+read_only = '  '
+format = 'at [$path]($style)[$read_only]($read_only_style) '
+
 
 [git_status]
 format = '[$all_status]($style)'
@@ -58,5 +89,6 @@ format = "[ $symbol$branch ]($style)"
 symbol = " "
 
 [cmd_duration]
-format = "[  $duration ]($style)"
+min_time = 500
+format = 'underwent [$duration](bold yellow)'
 style = "fg:bright-white bg:18"
