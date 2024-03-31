@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="spaceship"
+# ZSH_THEME="spaceship"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -175,14 +175,13 @@ set ring-bell-function 'ignore' # 关闭振铃经
 # ┌───────────┐
 # │ SPACESHIP │
 # └───────────┘
-SPACESHIP_CONDA_SYMBOL='🐍'
-SPACESHIP_PYENV_SYMBOL='🐍'
-SPACESHIP_TIME_SHOW='%H:%M:%S'
-SPACESHIP_PROMPT_DEFAULT_PREFIX='.'
+# SPACESHIP_CONDA_SYMBOL='🐍'
+# SPACESHIP_PYENV_SYMBOL='🐍'
+# SPACESHIP_TIME_SHOW='%H:%M:%S'
+# SPACESHIP_PROMPT_DEFAULT_PREFIX='.'
 
 
 #conda activate quant
-
 
 
 
