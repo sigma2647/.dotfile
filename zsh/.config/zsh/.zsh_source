@@ -2,6 +2,7 @@
 # │ source │
 # └────────┘
 
+eval "$(starship init zsh)"
 
 PATH=$PATH:~/.local/bin
 
