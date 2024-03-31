@@ -11,8 +11,6 @@ local config = {
 	show_new_tab_button_in_tab_bar = false,
 	macos_window_background_blur = 70,
 	adjust_window_size_when_changing_font_size = false,
-	text_background_opacity = 0.8,
-	window_background_opacity = 0.8,
 
 	window_padding = {
 		left = 0,
