@@ -132,7 +132,7 @@
             ]
         },
         {
-            "before": "Ctrl+]",
+            "before": "Ctrl+\\",
             "after": [],
             "commands": [
                 {
