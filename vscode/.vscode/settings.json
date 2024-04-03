@@ -13,7 +13,7 @@
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.bracketPairColorization.enabled": true,
     "explorer.compactFolders": false, // compact folders in explorer
-    "editor.minimap.enabled": true,
+    "editor.minimap.enabled": false,
     "editor.lineNumbers": "relative", // 相对行号 
     // ┌──────────┐
     // │ termianl │
@@ -132,7 +132,7 @@
             ]
         },
         {
-            "before": "Ctrl+[Backslash]",
+            "before": "Ctrl+]",
             "after": [],
             "commands": [
                 {
@@ -202,7 +202,7 @@
                     "command": "redo"
                 }
             ]
-        },
+        }
     ],
     "vim.insertModeKeyBindings": [
         {
@@ -281,7 +281,7 @@
         },
         {
             "before": [
-                "p",
+                "p"
             ],
             "after": [
                 "p",
@@ -311,5 +311,5 @@
     "files.defaultLanguage": "",
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
-    },
+    }
 }
