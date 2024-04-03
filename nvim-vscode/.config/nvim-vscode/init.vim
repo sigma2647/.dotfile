@@ -1,0 +1,1 @@
+nmap <Tab> :Tabnext<CR>

@@ -5,7 +5,7 @@
 // https://sourcegraph.com/github.com/macintacos/dotfiles/-/blob/vscode/settings.json?L773
 {
     "editor.inlineSuggest.enabled": true,
-    "editor.fontFamily": "MesloLGLDZ Nerd Font Mono",
+    "editor.fontFamily": "JetBrainsMonoNL Nerd Font",
     "editor.fontSize": 13,
     "terminal.integrated.inheritEnv": false,
     "files.autoSave": "onWindowChange",
@@ -26,7 +26,8 @@
     // 使用vim按键浏览文件树
     "workbench.list.keyboardNavigation": "simple",
     "workbench.list.automaticKeyboardNavigation": false,
-    "vscode-neovim.neovimInitVimPaths.darwin": "/Users/lawrencexing/.config/nvim/init.lua",
+    // Neovim
+    "vscode-neovim.neovimInitVimPaths.darwin": "$HOME/.config/nvim-vscode/init.vim",
     "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
     // ┌─────┐
     // │ vim │
@@ -221,9 +222,7 @@
             ]
         },
         {
-            "before": [
-                "<C-e>"
-            ],
+            "before": [],
             "commands": [
                 "cursorEnd"
             ]
@@ -310,4 +309,7 @@
     ],
     "tabnine.experimentalAutoImports": true,
     "files.defaultLanguage": "",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
 }
