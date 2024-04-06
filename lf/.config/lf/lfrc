@@ -17,8 +17,7 @@ map gf cd ~/quant_alpha_v5/notebook/factor/factors_tomato
 map gp cd ~/play
 map gc cd ~/.config
 map gv cd ~/.config/nvim
-map go cd ~/note/markdown
-map gl cd ~/note/logseq
+map go cd ~/note/sigma/
 map . set hidden!
 
 # map S push :shell<enter>$SHELL<enter>  # 打开当前路径
