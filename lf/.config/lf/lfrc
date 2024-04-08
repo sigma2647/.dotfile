@@ -20,7 +20,7 @@ map gv cd ~/.config/nvim
 map go cd ~/note/sigma/
 map . set hidden!
 
-# map S push :shell<enter>$SHELL<enter>  # 打开当前路径
+# map S push :shell<enter>open $SHELL<enter>  # 打开当前路径
 map o push :shell<enter>open .<enter>
 map <c-g> push :shell<enter>lazygit<enter>  # 打开当前路径
 

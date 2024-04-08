@@ -1,0 +1,38 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-\\": "workspace::ToggleBottomDock"
+    }
+  },
+  {
+    "context": "Editor && (vim_mode == 'normal' || vim_mode == 'visual') && !VimWaiting && !menu",
+    "bindings": {
+      // Key-bindings for normal and visual mode
+    }
+  },
+  {
+    "context": "Editor && vim_mode == 'normal' && !VimWaiting && !menu",
+    "bindings": {
+      // Key-bindings for normal mode only
+      "down": ["workspace::SendKeystrokes", "4 j"],
+      "up": ["workspace::SendKeystrokes", "4 k"],
+      "L": "vim::EndOfLine",
+      "S": ["workspace::SendKeystrokes", "down down down down"]
+    }
+  },
+  {
+    "context": "Editor && vim_mode == 'visual' && !VimWaiting && !menu",
+    "bindings": {
+      // Key-bindings for visual, visual line, and visual block modes
+      "L": ["workspace::SendKeystrokes", "down down down down"]
+    }
+  },
+  {
+    "context": "Editor && vim_mode == 'insert' && !menu",
+    "bindings": {
+      // Key-bindings for insert mode
+      "j j": "vim::NormalBefore" // Remap 'jj' in insert mode to escape
+    }
+  }
+]
