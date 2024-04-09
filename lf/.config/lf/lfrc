@@ -6,8 +6,6 @@ set icons true
 
 # Set lf to raanger like keybindings
 
-#map S 
-
 
 
 map gd cd ~/Downloads
@@ -20,20 +18,15 @@ map gv cd ~/.config/nvim
 map go cd ~/note/sigma/
 map . set hidden!
 
-# map S push :shell<enter>open $SHELL<enter>  # 打开当前路径
-map o push :shell<enter>open .<enter>
 map <c-g> push :shell<enter>lazygit<enter>  # 打开当前路径
 
+map <enter> shell
 
 # leave some space at the top and the bottom of the screen
 # set scrolloff 1
 
 
 
-# TODO : Add more keybindings
-# TODO : add unzip command
-# TODO : add unrar command
-# TODO : add tar command
 map gU unzip -o  # 解压文件
 
 
@@ -44,7 +37,15 @@ cmd mkdir ${{
 }}
 
 
+cmd open ${{open .}}
 
 map a mkdir
 map D delete  # 删除文件或目录
 map x cut
+map o ${{open .}}
+
+
+# TODO : Add more keybindings
+# TODO : add unzip command
+# TODO : add unrar command
+# TODO : add tar command
