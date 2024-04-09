@@ -37,7 +37,6 @@ cmd mkdir ${{
 }}
 
 
-cmd open ${{open .}}
 
 map a mkdir
 map D delete  # 删除文件或目录
