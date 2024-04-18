@@ -1,4 +1,3 @@
-
 """================================================================
 此文件为pyflyby的配置文件
 ~/.ipython/profile_default/startup
@@ -10,6 +9,7 @@
 import pandas as pd
 import numpy as np
 import visidata as vd
+
 # from rich import print
 from rich import pretty
 from rich.traceback import install
@@ -17,36 +17,19 @@ from rich.traceback import install
 pretty.install()
 install()
 
-pd.set_option('expand_frame_repr', False)
+pd.set_option("expand_frame_repr", False)
 
 
 vd = vd.view_pandas
 
-# ipython = get_ipython()
-
-# try:
-    # ipython.magic("load_ext pyflyby")
-# except ModuleNotFoundError:
-    # print("pyflyby 未安装, 正在安装...")
-    # subprocess.Poen(
-            # ["pip", "install", "pyflyby"],
-            # stdout=subprocess.DEVNULL,
-            # stdourr=subprocess.DEVNULL,
-    # ).wait()
-    # ipython.magic("load_ext pyflyby")
-    # subprocess.Popen(
-            # ["pip", "install", "ipython-sql"],
-            # stdout=subprocess.DEVNULL,
-            # stdourr=subprocess.DEVNULL,
-    # )
 
 # 利润计算
-def percent(original,current):
-    percent = (current-original)/original*100
-    
-    print('收益率为 %s' % (percent), '%')
+def percent(original, current):
+    percent = (current - original) / original * 100
+
+    print("收益率为 %s" % (percent), "%")
+
 
 def P(feather):
     df = pd.read_feather(feather)
     return df
-
