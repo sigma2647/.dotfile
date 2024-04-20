@@ -36,6 +36,18 @@ alias emacs2='emacs -q -l ~/.emacs.d.evan/init.el'
 alias emacs3='emacs -q -l ~/.emacs3.d/init.el'
 alias emacs_doom='emacs -q -l ~/.emacs.d.doom/early-init.el'
 
+
+
+# Check if exa is installed
+if command -v lsd &> /dev/null
+then
+    # If exa is installed, create an alias for ls
+    alias ls='lsd'
+#else
+    # If exa is not installed, use the original ls command
+    #alias ls='ls'
+fi
+
 eval $(thefuck --alias)
 
 # ┌─────┐
