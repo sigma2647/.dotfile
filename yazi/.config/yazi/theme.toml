@@ -199,6 +199,10 @@ rules = [
 
 [icon]
 
+prepend_rules = [
+    { name = "*", is = "orphan", text = "" },
+    { name = "*", is = "link", text = "" },
+]
 rules = [
     # Programming
     { name = "*.c", text = "", fg = "#599eff" },
