@@ -8,7 +8,7 @@ source $HOME/.config/zsh/.zsh_keymap
 source $HOME/.config/zsh/.zsh_function
 
 
-
+eval "$(zoxide init zsh)"
 
 
 LFCD="$HOME/.config/lf/lfcd.sh"                                #  pre-built binary, make sure to use absolute path
