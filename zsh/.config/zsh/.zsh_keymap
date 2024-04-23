@@ -1,1 +1,6 @@
-bindkey -s '^o' 'lfcd\n'  # zsh
+LFCD="$HOME/.config/lf/lfcd.sh"                                #  pre-built binary, make sure to use absolute path
+if [ -f "$LFCD" ]; then
+    source "$LFCD"
+fi
+#bindkey -s '^o' 'lfcd\n'  # zsh
+bindkey -s '^o' 'yy\n'  # zsh

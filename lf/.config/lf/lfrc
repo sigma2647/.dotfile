@@ -36,9 +36,15 @@ cmd mkdir ${{
     mkdir $ans
 }}
 
+cmd mkfile ${{
+  printf "Enter a File Name: "
+  read ans
+  $EDITOR $ans
+}}
 
 
 map a mkdir
+map A mkfile
 map D delete  # 删除文件或目录
 map x cut
 map o ${{open .}}

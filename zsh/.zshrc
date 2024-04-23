@@ -11,10 +11,6 @@ source $HOME/.config/zsh/.zsh_function
 eval "$(zoxide init zsh)"
 
 
-LFCD="$HOME/.config/lf/lfcd.sh"                                #  pre-built binary, make sure to use absolute path
-if [ -f "$LFCD" ]; then
-    source "$LFCD"
-fi
 
 
 eval # ZSH has a quirk where `preexec` is only run if a command is actually run (i.e
