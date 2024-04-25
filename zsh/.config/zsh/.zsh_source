@@ -16,6 +16,9 @@ export PATH="/usr/local/visidata/bin:$PATH"
 
 export PATH=$PATH:/usr/local/neovim/bin
 
+#sql
+export PATH=${PATH}:/usr/local/mysql/bin
+
 # ┌─────────┐
 # │ go lang │
 # └─────────┘
@@ -55,6 +58,5 @@ export PATH=$HOME/.config/emacs/bin:$PATH
 # else
 #     #echo "You are not foo."
 # fi
-
 
 
