@@ -15,7 +15,6 @@ $gradle\
 $haskell\
 $java\
 $julia\
-$nodejs\
 $python\
 $nim\
 $rust\
@@ -114,11 +113,6 @@ format = '[ $symbol ($version) ]($style)'
 
 [julia]
 symbol = " "
-style = "bg:#6395b0"
-format = '[ $symbol ($version) ]($style)'
-
-[nodejs]
-symbol = ""
 style = "bg:#6395b0"
 format = '[ $symbol ($version) ]($style)'
 
