@@ -1,6 +1,6 @@
 #zmodload zsh/zprof
 source $HOME/.config/zsh/.zshrc
-source $HOME/.config/zsh/.zprofile
+# source $HOME/.config/zsh/.zprofile
 source $HOME/.config/zsh/.zshenv
 source $HOME/.config/zsh/.zsh_source
 source $HOME/.config/zsh/.zsh_alias
