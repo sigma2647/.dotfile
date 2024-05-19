@@ -34,8 +34,19 @@ export PATH
 # export PATH=$HOME/.emacs.d.doom/bin:$PATH
 export PATH=$HOME/.config/emacs/bin:$PATH
 
-
+# ┌─────┐
+# │ fzf │
+# └─────┘
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+eval "$(fzf --zsh)"
+
+eval "$(zoxide init --cmd cd zsh)"
+eval "$(zoxide init zsh)"
+
+
+# ┌──────────┐
+# │ homebrew │
+# └──────────┘
 
 # ┌─────────────────────────┐
 # │ 若启动慢则使用上方代码  │

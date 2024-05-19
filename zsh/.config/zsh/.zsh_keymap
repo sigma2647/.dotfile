@@ -4,3 +4,12 @@ if [ -f "$LFCD" ]; then
 fi
 #bindkey -s '^o' 'lfcd\n'  # zsh
 bindkey -s '^o' 'yy\n'  # zsh
+
+# 开启emacs 按键
+bindkey -e
+
+
+bindkey '^p' history-search-backward
+bindkey '^n' history-search-forward
+
+
