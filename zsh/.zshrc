@@ -9,7 +9,6 @@ source $HOME/.config/zsh/.zsh_source
 
 
 
-
 # Load a few important annexes, without Turbo
 # (this is currently required for annexes)
 zinit light-mode for \
@@ -25,4 +24,4 @@ zinit light-mode for \
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
+export EDITOR="nvim"
