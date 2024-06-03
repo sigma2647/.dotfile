@@ -148,3 +148,8 @@ just download github desktop
 ## imselect
 [im-select](https://github.com/daipeihust/im-select)
 
+
+## Vimv
+``` bash
+curl https://raw.githubusercontent.com/thameera/vimv/master/vimv > ~/.local/bin/vimv && chmod +755 ~/.local/bin/vimv
+```

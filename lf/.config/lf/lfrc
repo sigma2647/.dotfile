@@ -49,6 +49,8 @@ map D delete  # 删除文件或目录
 map x cut
 map o ${{open .}}
 
+map R $vimv $fx
+
 
 # TODO : Add more keybindings
 # TODO : add unzip command
