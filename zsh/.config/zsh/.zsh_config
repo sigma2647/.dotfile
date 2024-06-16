@@ -40,4 +40,6 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
 set ring-bell-function 'ignore' # 关闭振铃经
 
+
+export EDITOR="nvim"
 #setopt CORRECT #自动纠正用户输入

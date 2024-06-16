@@ -3,8 +3,8 @@ source $HOME/.config/zsh/.zshenv # lf icon
 source $HOME/.config/zsh/.zsh_alias
 source $HOME/.config/zsh/.zsh_keymap
 source $HOME/.config/zsh/.zsh_source
+source $HOME/.config/zsh/.zsh_eval
 #source $HOME/.config/zsh/.zsh_function
-
 
 
 
@@ -24,4 +24,3 @@ zinit light-mode for \
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-export EDITOR="nvim"
