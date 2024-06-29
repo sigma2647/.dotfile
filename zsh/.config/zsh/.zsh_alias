@@ -14,7 +14,6 @@ alias enableproxyMini='export https_proxy=http://127.0.0.1:7890 http_proxy=http:
 
 
 alias disableproxy='unset http_proxy https_proxy' # 取消终端代理
-alias ip='curl cip.cc' # 测试
 alias x='tmux'
 alias xa='tmux attach'
 alias c='z'
