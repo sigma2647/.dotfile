@@ -15,3 +15,4 @@ export PATH
 PROMPT='%B%F{003}  %B%F{015}%~%B%F{006} 󰅂%b%F{015} '
 RPROMPT='%B%F{015}%T'
 
+
