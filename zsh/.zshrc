@@ -12,7 +12,7 @@ source $HOME/.config/zsh/.zsh_eval
 PATH="/Library/Frameworks/Python.framework/Versions/3.12/bin:${PATH}"
 export PATH
 
-PROMPT='%B%F{003}  %B%F{015}%~%B%F{006} 󰅂%b%F{015} '
-RPROMPT='%B%F{015}%T'
+#PROMPT='%B%F{003}  %B%F{015}%~%B%F{006} 󰅂%b%F{015} '
+#RPROMPT='%B%F{015}%T'
 
 
