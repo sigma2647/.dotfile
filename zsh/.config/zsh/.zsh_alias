@@ -59,4 +59,3 @@ fi
 
 
 
-eval $(thefuck --alias)

@@ -12,7 +12,6 @@ setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
 
-
 # Completion styling
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
@@ -20,5 +19,10 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
 set ring-bell-function 'ignore' # 关闭振铃经
 
+precmd() {print "" } #为每行增加空格空间
 
-export EDITOR="nvim"
+autoload -Uz compinit
+setopt PROMPT_SUBST
+compinit
+zstyle ':completion:*' menu select
+

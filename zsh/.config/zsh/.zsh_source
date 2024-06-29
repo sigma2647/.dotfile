@@ -2,7 +2,7 @@
 # │ source │
 # └────────┘
 
-eval "$(starship init zsh)"
+export EDITOR="nvim"
 
 PATH=$PATH:~/.local/bin
 
