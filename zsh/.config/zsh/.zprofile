@@ -52,5 +52,5 @@ else
 fi
 
 
-conda activate quant
+#conda activate quant
 
