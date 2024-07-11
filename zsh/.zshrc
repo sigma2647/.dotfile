@@ -17,3 +17,5 @@ export PATH
 #RPROMPT='%B%F{015}%T'
 
 
+cat ~/.chache/wal/sequences
+
