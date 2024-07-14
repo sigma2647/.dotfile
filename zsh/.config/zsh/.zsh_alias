@@ -38,6 +38,21 @@ alias emacs2='emacs -q -l ~/.emacs.d.evan/init.el'
 alias emacs3='emacs -q -l ~/.emacs3.d/init.el'
 alias emacs_doom='emacs -q -l ~/.emacs.d.doom/early-init.el'
 
+# ┌────────┐
+# │ pacman │
+# └────────┘
+alias in='sudo pacman -S' # install package
+alias un='sudo pacman -Rns' # uninstall package
+alias up='sudo pacman -Syu' # update system/package/aur
+alias pl='pacman -Qs' # list installed package
+alias pa='pacman -Ss' # list availabe package
+
+
+
+
+
+
+
 
 
 # Check if exa is installed
