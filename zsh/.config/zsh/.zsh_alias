@@ -49,9 +49,10 @@ alias pa='pacman -Ss' # list availabe package
 
 
 
-
-
-
+# ┌─────┐
+# │ zed │
+# └─────┘
+alias z='zeditor'
 
 
 
