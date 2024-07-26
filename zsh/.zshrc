@@ -1,3 +1,10 @@
+# ┌───────┐
+# │ pyenv │
+# └───────┘
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
 source $HOME/.config/zsh/.zsh_config
 source $HOME/.config/zsh/.zsh_source
 source $HOME/.config/zsh/.zshenv # lf icon
@@ -19,9 +26,6 @@ export PATH
 
 #cat ~/.chache/wal/sequences
 
-# ┌───────┐
-# │ pyenv │
-# └───────┘
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+
+
+
