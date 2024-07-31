@@ -82,3 +82,21 @@ then
     # If rg is installed, create an alias for rg
     alias cat='bat'
 fi
+
+# 定义一个函数来检查 open 是否可用
+check_open() {
+    if command -v open >/dev/null 2>&1; then
+        return 0
+    else
+        return 1
+    fi
+}
+
+# 在命令执行前进行检查
+preexec() {
+    if check_open; then
+        :  # 什么都不做，如果 open 可用
+    else
+        alias open='explorer.exe'  # 如果 open 不可用，将 open 别名指向 explorer.exe
+    fi
+}
