@@ -12,8 +12,6 @@ source $HOME/.config/zsh/.zsh_alias
 source $HOME/.config/zsh/.zsh_keymap
 source $HOME/.config/zsh/.zsh_eval
 
-#source $HOME/.config/zsh/.zsh_function
-
 
 # Setting PATH for Python 3.12
 # The original version is saved in .zprofile.pysave
@@ -25,7 +23,6 @@ export PATH
 
 
 #cat ~/.chache/wal/sequences
-
 
 
 
