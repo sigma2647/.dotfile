@@ -1,4 +1,4 @@
-# eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 # and ~/.zshrc (for interactive shells) :
 
 export PYENV_ROOT="$HOME/.pyenv"
