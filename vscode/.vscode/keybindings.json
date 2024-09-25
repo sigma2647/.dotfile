@@ -29,6 +29,39 @@
         "key": "ctrl-k",
         "command":"workbench.action.navigateUp" 
     },
+
+    //emacs navigate
+    {
+        "key": "ctrl-f",
+        "command": "cursorRight",
+        "when": "editorTextFocus && vim.mode == 'Insert'"
+        
+    },
+    {
+        "key": "ctrl-b",
+        "command": "cursorLeft",
+        "when": "editorTextFocus && vim.mode == 'Insert'"
+        
+    },
+    {
+        "key": "ctrl-p",
+        "command": "cursorUp",
+        "when": "editorTextFocus && vim.mode == 'Insert'"
+        
+    },
+    {
+        "key": "ctrl-n",
+        "command": "cursorDown",
+        "when": "editorTextFocus && vim.mode == 'Insert'"
+        
+    },
+    {
+        "key": "ctrl-e",
+        "command": "cursorEnd",
+        "when": "editorTextFocus && vim.mode == 'Insert'"
+        
+    },
+
     {
         "key": "ctrl-w",
         "command":"workbench.action.closeActiveEditor",

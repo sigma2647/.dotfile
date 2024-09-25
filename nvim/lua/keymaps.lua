@@ -24,3 +24,5 @@ vim.keymap.set("n", "<leader>h", ":nohlsearch<CR>")
 
 vim.keymap.set("n", "Q", ":q<CR>")
 vim.keymap.set("n", "S", ":w<CR>")
+
+vim.keymap.set("v", "<leader>p", '"_dP')

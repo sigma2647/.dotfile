@@ -1,46 +1,24 @@
-// 
-// https://code.visualstudio.com/docs/getstarted/keybindings
-// https://github.com/VSCodeVim/Vim
-// 
-// https://sourcegraph.com/github.com/macintacos/dotfiles/-/blob/vscode/settings.json?L773
 {
+
     "editor.inlineSuggest.enabled": true,
     "editor.fontFamily": "JetBrainsMonoNL Nerd Font",
-    "editor.fontSize": 13,
-    "terminal.integrated.inheritEnv": false,
-    "files.autoSave": "onWindowChange",
+    "editor.fontSize": 18,
     "editor.cursorBlinking": "phase",
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.bracketPairColorization.enabled": true,
-    "explorer.compactFolders": false, // compact folders in explorer
+    "editor.guides.bracketPairs": true,
+    "explorer.compactFolders": false,
     "editor.minimap.enabled": false,
-    "editor.lineNumbers": "relative", // 相对行号 
-    // ┌──────────┐
-    // │ termianl │
-    // └──────────┘
-    "terminal.integrated.fontSize": 14,
-    // ┌───────────┐
-    // │ workbench │
-    // └───────────┘
-    "workbench.colorTheme": "Atom One Dark",
-    // 使用vim按键浏览文件树
-    "workbench.list.keyboardNavigation": "simple",
+    "editor.lineNumbers": "relative",
+
+    "terminal.integrated.fontSize": 17,
+    "terminal.integrated.inheritEnv": false,
+    "files.autoSave": "onWindowChange",
+
+    // "workbench.list.keyboardNavigation": "simple",
+
     "workbench.list.automaticKeyboardNavigation": false,
-    // Neovim
-    "vscode-neovim.neovimInitVimPaths.darwin": "$HOME/.config/nvim-vscode/init.vim",
-    "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
-    // ┌─────┐
-    // │ vim │
-    // └─────┘
-    // https://github.com/VSCodeVim/Vim
-    // {
-    //   "key": "YOUR_KEY_COMBINATION",
-    //   "command": "vim.remap",
-    //   "when": "inputFocus && vim.mode == 'VIM_MODE_YOU_WANT_TO_REBIND'",
-    //   "args": {
-    //     "after": ["YOUR_VIM_ACTION"]
-    //   }
-    // }
+
     "vim.incsearch": true,
     "vim.useCtrlKeys": true,
     "vim.hlsearch": true,
@@ -49,17 +27,11 @@
     "vim.useSystemClipboard": true,
     "vim.highlightedyank.enable": true,
     "vim.camelCaseMotion.enable": true,
-    // 输入法切换
     "vim.autoSwitchInputMethod.enable": true,
-    "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.US",
-    "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/local/bin/im-select",
-    "vim.autoSwitchInputMethod.switchIMCmd": "/usr/local/bin/im-select {im}",
-    // 取消绑定某个行号
-    // "vim.handleKeys": {
-    //     "<C-a>": false,
-    //     "<C-f>": false,
-    //     "<C-n>": false
-    // },
+    "vim.autoSwitchInputMethod.defaultIM": "1033",
+    "vim.autoSwitchInputMethod.obtainIMCmd": "D:\\lawrence\\im-select.exe",
+    "vim.autoSwitchInputMethod.switchIMCmd": "D:\\lawrence\\im-select.exe {im}",
+
     "vim.normalModeKeyBindings": [
         {
             "before": [
@@ -204,10 +176,11 @@
             ]
         }
     ],
+
     "vim.insertModeKeyBindings": [
         {
             "before": [
-                "<c-b>"
+                "<C-b>"
             ],
             "commands": [
                 "cursorLeft"
@@ -262,6 +235,7 @@
             ]
         }
     ],
+
     "vim.visualModeKeyBindings": [
         {
             "before": [
@@ -307,9 +281,22 @@
             ]
         }
     ],
-    "tabnine.experimentalAutoImports": true,
     "files.defaultLanguage": "",
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
-    }
+    },
+    "security.allowedUNCHosts": [
+        "192.168.1.222"
+    ],
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.editorAssociations": {
+        "*.docx": "default"
+    },
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "editor.largeFileOptimizations": false,
+    "Lingma.cloudModelAutoTriggerGenerateLength": "medium",
+    "debug.console.fontSize": 15,
+    "git.openRepositoryInParentFolders": "never",
+    "workbench.colorTheme": "Deepdark Material Theme | Full Black Version"
 }
