@@ -25,6 +25,5 @@ export PATH
 #cat ~/.chache/wal/sequences
 
 
-
-# export proxy="192.168.10.34:7890"
+export proxy="192.168.10.34:7890"
 
