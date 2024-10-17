@@ -31,3 +31,4 @@ setopt PROMPT_SUBST
 compinit
 zstyle ':completion:*' menu select
 
+stty -ixon
