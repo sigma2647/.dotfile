@@ -1,5 +1,5 @@
 -- 设置行号
-vim.opt.number = true
+vim.wo.relativenumber = true -- 启用相对行号
 
 -- 开启语法高亮
 vim.opt.syntax = "enable" 
@@ -17,3 +17,5 @@ vim.opt.scrolloff = 6
 
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
+
+vim.wo.number = true
