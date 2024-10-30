@@ -1,4 +1,4 @@
-vim.g.mapleader = " "                   -- 设置leader键为空格
+vim.g.mapleader = " "                                   -- 设置leader键为空格
 vim.g.netrw_banner = 0					-- gets rid of the annoying banner for netrw
 vim.g.netrw_altv = 1					-- change from left splitting to right splitting
 vim.g.netrw_liststyle=3					-- tree style view in netrw

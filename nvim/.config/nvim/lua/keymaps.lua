@@ -1,4 +1,4 @@
-
+vim.g.mapleader = " "                                   -- 设置leader键为空格
 -- 保存文件
 vim.keymap.set("n", "<leader>w", ":w<CR>")
 
