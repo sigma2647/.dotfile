@@ -8,6 +8,7 @@ vim.opt.syntax = "ON"
 vim.opt.backup = false
 vim.opt.compatible = false				-- turn off vi compatibility mode
 vim.cmd('colorscheme catppuccin')			-- set colorscheme
+vim.o.termguicolors = true
 
 
 

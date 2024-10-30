@@ -1,26 +1,32 @@
+function map(mode, lhs, rhs, opts)
+    local options = { noremap = true, silent = true }
+    if opts then
+        options = vim.tbl_extend("force", options, opts)
+    end
+    vim.keymap.set(mode, lhs, rhs, options)
+end
+
 vim.g.mapleader = " "                                   -- 设置leader键为空格
--- 保存文件
-vim.keymap.set("n", "<leader>w", ":w<CR>")
+map("n", "<leader>w", ":w<CR>")              -- 保存文件
 
--- 退出Neovim
-vim.keymap.set("n", "<leader>q", ":q<CR>") 
+map("n", "<leader>q", ":q<CR>")              -- 退出Neovim
 
--- 分屏
-vim.keymap.set("n", "<leader>v", ":vsplit<CR>")
-vim.keymap.set("n", "<leader>h", ":split<CR>")
+map("n", "<leader>v", ":vsplit<CR>")         -- 分屏
+map("n", "<leader>h", ":split<CR>")
 
--- 切换buffer
-vim.keymap.set("n", "<C-h>", ":bprevious<CR>")
-vim.keymap.set("n", "<C-l>", ":bnext<CR>")
 
-vim.keymap.set("n", "H", "^")
-vim.keymap.set("n", "L", "$")
-vim.keymap.set("v", "H", "^")
-vim.keymap.set("v", "L", "$")
+map('n', '<C-h>', '<C-w>h')                  -- 设置窗口导航快捷键
+map('n', '<C-j>', '<C-w>j')
+map('n', '<C-k>', '<C-w>k')
+map('n', '<C-l>', '<C-w>l')
 
-vim.keymap.set("n", "<leader>h", ":nohlsearch<CR>")
+map("n", "H", "^")
+map("n", "L", "$")
+map("v", "H", "^")
+map("v", "L", "$")
+map("n", "<leader>h", ":nohlsearch<CR>")
+map("n", "Q", ":q<CR>")
+map("n", "S", ":w<CR>")
 
-vim.keymap.set("n", "Q", ":q<CR>")
-vim.keymap.set("n", "S", ":w<CR>")
+map("v", "p", 'P')                          -- visual模式下覆盖粘贴不污染剪贴板
 
-vim.keymap.set("v", "p", 'P')
