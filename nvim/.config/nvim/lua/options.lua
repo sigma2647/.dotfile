@@ -10,6 +10,8 @@ vim.opt.compatible = false				-- turn off vi compatibility mode
 vim.cmd('colorscheme catppuccin')			-- set colorscheme
 vim.o.termguicolors = true
 
+vim.opt.scrolloff = 3					-- scroll page when cursor is 3 lines from top/bottom
+vim.opt.sidescrolloff = 3				-- scroll page when cursor is 3 spaces from left/right
 
 
 vim.opt.number = true       	-- 开启相对行号
