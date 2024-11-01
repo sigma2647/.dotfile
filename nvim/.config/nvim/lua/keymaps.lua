@@ -30,3 +30,15 @@ map("n", "S", ":w<CR>")
 
 map("v", "p", 'P')                          -- visual模式下覆盖粘贴不污染剪贴板
 
+
+vim.keymap.set("n", "<leader>n", function()
+  local is_number = vim.wo.number
+  if is_number then
+    vim.wo.number = false
+    vim.wo.relativenumber = false
+  else
+    vim.wo.number = true
+    vim.wo.relativenumber = true
+  end
+end, { desc = "Toggle line numbers" })
+
