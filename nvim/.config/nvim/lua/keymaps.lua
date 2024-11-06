@@ -15,10 +15,10 @@ map("n", "<leader>v", ":vsplit<CR>")         -- 分屏
 map("n", "<leader>h", ":split<CR>")
 
 
-map('n', '<C-h>', '<C-w>h')                  -- 设置窗口导航快捷键
-map('n', '<C-j>', '<C-w>j')
-map('n', '<C-k>', '<C-w>k')
-map('n', '<C-l>', '<C-w>l')
+map('n', '<C-h>', ':wincmd h<CR>')                  -- 设置窗口导航快捷键
+map('n', '<C-j>', ':wincmd j<CR>')                  -- 设置窗口导航快捷键
+map('n', '<C-k>', ':wincmd k<CR>')                  -- 设置窗口导航快捷键
+map('n', '<C-l>', ':wincmd l<CR>')                  -- 设置窗口导航快捷键
 
 map("n", "H", "^")
 map("n", "L", "$")
