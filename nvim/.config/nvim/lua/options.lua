@@ -32,6 +32,4 @@ vim.opt.ignorecase = true               -- 搜索时忽略大小写
 vim.opt.smartcase = true
 vim.opt.incsearch = true				-- enable incremental searching
 vim.opt.wrap = true						-- 开启换行
-vim.opt.tabstop = 4						-- tabs=4spaces
-vim.opt.shiftwidth = 4
 vim.opt.fileencoding = "utf-8"
