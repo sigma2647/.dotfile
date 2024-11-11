@@ -16,8 +16,8 @@ alias ff='fastfetch'
 
 
 alias disableproxy='unset http_proxy https_proxy' # 取消终端代理
-alias x='tmux'
-alias xa='tmux attach'
+alias t='tmux'
+alias ta='tmux attach'
 alias c='z'
 alias vpython='ipython --TerminalInteractiveShell.editing_mode=vi'
 alias g='lazygit'
