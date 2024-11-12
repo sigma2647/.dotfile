@@ -49,7 +49,7 @@
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
     # '';
-    ".config/starship".sourece = ~/dotfile/starship;
+    ".config/starship".sourece = /home/lawrence/dotfile/starship/.config;
   };
 
   # Home Manager can also manage your environment variables through
