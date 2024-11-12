@@ -1,34 +1,38 @@
-
-# History
+# History configuration
 HISTSIZE=5000
-HISTFILE=~/.zsh_history
 SAVEHIST=$HISTSIZE
-HISTDUP=erase
+HISTFILE=~/.zsh_history
+
+# 启用扩展历史记录和设置时间戳格式
+setopt EXTENDED_HISTORY
+# HIST_STAMPS="%F %T"
+HIST_STAMPS="%y-%m-%d %H:%M:%S"   # 显示为 YY-MM-DD HH:MM:SS
+
+# 其他历史记录选项
 setopt appendhistory
-setopt sharehistory #多命令行共享命令
+setopt sharehistory # 多命令行共享命令
 setopt hist_ignore_space
 setopt hist_ignore_all_dups
 setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
 
-#export HISTTIMEFORMAT='%F %T ' # add time timestamp for history
-export HISTTIMEFORMAT="%F %T"
-#HIST_STAMPS="yyyy-mm-dd hh:mm:ss"
-#export HISTTIMEFORMAT='%F %T ' # add time timestamp for history
-
 # Completion styling
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
+# 关闭终端铃声
+setopt NO_BEEP
 
-set ring-bell-function 'ignore' # 关闭振铃经
+# 为每个命令前增加空行（可选）
+precmd() { print "" }
 
-precmd() {print "" } #为每行增加空格空间
-
+# 加载自动补全功能
 autoload -Uz compinit
-setopt PROMPT_SUBST
 compinit
-zstyle ':completion:*' menu select
 
+# 其他配置
+setopt PROMPT_SUBST
+zstyle ':completion:*' menu select
 stty -ixon
+

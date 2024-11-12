@@ -29,3 +29,5 @@ export proxy="192.168.10.34:7890"
 
 
 [ ! -f "$HOME/.x-cmd.root/X" ] || . "$HOME/.x-cmd.root/X" # boot up x-cmd.
+
+
