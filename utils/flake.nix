@@ -19,13 +19,14 @@
             numpy
             pandas
             requests
+            #streamlit
             # 在此处添加其他所需的 Python 包
           ];
           shellHook = ''
             echo "Welcome to the Python 3.12 development environment on ${system}!"
             if [ ! -d ".venv" ]; then
-            echo "Creating virtual environment in .venv directory..."
-            python3 -m venv .venv
+              echo "Creating virtual environment in .venv directory..."
+              python3 -m venv .venv
             fi
             source .venv/bin/activate
             echo "Virtual environment activated."
