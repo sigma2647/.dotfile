@@ -36,3 +36,8 @@ setopt PROMPT_SUBST
 zstyle ':completion:*' menu select
 stty -ixon
 
+# ┌─────┐
+# │ Man │
+# └─────┘
+
+export MANPAGER="nvim +Man!"
