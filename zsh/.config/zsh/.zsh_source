@@ -1,3 +1,9 @@
+# ┌─────┐
+# │ Man │
+# └─────┘
+
+export MANPAGER="nvim +Man!"
+
 # ┌────────┐
 # │ source │
 # └────────┘
