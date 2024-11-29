@@ -30,6 +30,8 @@ map("n", "S", ":w<CR>")
 
 map("v", "p", 'P')                          -- visual模式下覆盖粘贴不污染剪贴板
 
+map({"n","v"}, "<leader>y", [["+y]])
+
 
 vim.keymap.set("n", "<leader>n", function()
   local is_number = vim.wo.number
