@@ -8,3 +8,5 @@ zsh/.config/lazygit/
 zsh/.config/nvim/
 zsh/.config/htop
 elpaca
+zsh-autosuggestions
+zsh-syntax-highlighting
