@@ -4,9 +4,10 @@ Set-Alias -Name open -Value explorer.exe
 
 Set-Alias -Name g -Value lazygit
 
-Set-Alias -Name l -Value lfcd
+Set-Alias -Name l -Value y
 
 Set-Alias -Name v -Value nvim
+
 
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -ShowToolTips
@@ -25,3 +26,18 @@ Import-Module -Name Microsoft.WinGet.CommandNotFound
 #f45873b3-b655-43a6-b217-97c00aa0db58
 
 $env:POWERSHELL_UPDATECHECK = 'Off'
+Set-Item -Path Env:POWERSHELL_UPDATECHECK -Value 'Off'
+
+$env:EDITOR = "nvim"
+$env:VISUAL = "nvim"
+
+
+function y {
+    $tmp = [System.IO.Path]::GetTempFileName()
+    yazi $args --cwd-file="$tmp"
+    $cwd = Get-Content -Path $tmp
+    if (-not [String]::IsNullOrEmpty($cwd) -and $cwd -ne $PWD.Path) {
+        Set-Location -LiteralPath $cwd
+    }
+    Remove-Item -Path $tmp
+}
