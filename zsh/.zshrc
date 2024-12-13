@@ -22,3 +22,4 @@ export proxy="192.168.10.34:7890"
 
 
 
+export PATH="/Library/TeX/texbin:$PATH"
