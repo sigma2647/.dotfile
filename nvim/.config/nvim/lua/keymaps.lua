@@ -30,8 +30,23 @@ map("n", "S", ":w<CR>")
 
 map("v", "p", 'P')                          -- visual模式下覆盖粘贴不污染剪贴板
 
-map({"n","v"}, "<leader>y", [["+y]])
 
+map('i', '<A-b>', '<S-Left>', { silent = false })
+map('i', '<A-f>', '<S-Right>', { silent = false })
+map('i', '<C-a>', '<home>', { silent = false })
+map('i', '<C-e>', '<end>', { silent = false })
+map('i', '<C-b>', '<left>', { silent = false })
+map('i', '<C-f>', '<right>', { silent = false })
+map('i', '<C-k>', '<C-o>D', { silent = false })
+
+-- Command mode specific
+map('c', '<A-b>', '<S-Left>', { silent = false })
+map('c', '<A-f>', '<S-Right>', { silent = false })
+map('c', '<C-a>', '<home>', { silent = false })
+map('c', '<C-e>', '<end>', { silent = false })
+map('c', '<C-b>', '<left>', { silent = false })
+map('c', '<C-f>', '<right>', { silent = false })
+map('c', '<C-k>', '<C-\\>e getcmdpos() == 1 ? "" : getcmdline()[:getcmdpos()-2]<CR>',{ silent = false })
 
 vim.keymap.set("n", "<leader>n", function()
   local is_number = vim.wo.number
