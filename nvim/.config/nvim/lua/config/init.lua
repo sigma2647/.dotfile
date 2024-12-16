@@ -12,6 +12,7 @@ function M.setup()
     buffer_name = 'Terminal'
   })
 
+  require('modules.filetree').setup()
 
 end
 
