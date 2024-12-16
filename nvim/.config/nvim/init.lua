@@ -1,6 +1,3 @@
-require("keymaps")
-require("options")
-require("autocmd")
+require("core").setup()
+require("config").setup()
 
-
--- https://gitlab.com/linuxdabbler/dotfiles/-/tree/main/.config/nvim

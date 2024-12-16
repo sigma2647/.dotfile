@@ -48,6 +48,13 @@ map('c', '<C-b>', '<left>', { silent = false })
 map('c', '<C-f>', '<right>', { silent = false })
 map('c', '<C-k>', '<C-\\>e getcmdpos() == 1 ? "" : getcmdline()[:getcmdpos()-2]<CR>',{ silent = false })
 
+-- 终端相关快捷键
+map('t', '<Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
+map('t', '<C-h>', '<C-\\><C-n><C-w>h', { desc = 'Move to left window' })
+map('t', '<C-j>', '<C-\\><C-n><C-w>j', { desc = 'Move to bottom window' })
+map('t', '<C-k>', '<C-\\><C-n><C-w>k', { desc = 'Move to top window' })
+map('t', '<C-l>', '<C-\\><C-n><C-w>l', { desc = 'Move to right window' })
+
 vim.keymap.set("n", "<leader>n", function()
   local is_number = vim.wo.number
   if is_number then
