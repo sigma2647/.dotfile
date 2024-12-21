@@ -7,6 +7,7 @@ export MANPAGER="nvim +Man!"
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+alias dot='cd ~/dotfile'
 PS1='[\u@\h \W]\$ '
 
 [ ! -f "$HOME/.x-cmd.root/X" ] || . "$HOME/.x-cmd.root/X" # boot up x-cmd.
