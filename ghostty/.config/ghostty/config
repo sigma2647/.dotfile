@@ -1,3 +1,4 @@
 # background = ffffff
 # foreground = ffffff
 keybind = cmd+j=toggle_quick_terminal
+cursor-style = block
