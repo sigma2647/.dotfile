@@ -7,7 +7,7 @@ vim.cmd('set path+=**')					-- search current directory recursively
 vim.opt.syntax = "ON"
 vim.opt.backup = false
 vim.opt.compatible = false				-- turn off vi compatibility mode
-vim.cmd('colorscheme catppuccin')			-- set colorscheme
+-- vim.cmd('colorscheme catppuccin')			-- set colorscheme
 vim.o.termguicolors = true
 
 vim.opt.scrolloff = 3					-- scroll page when cursor is 3 lines from top/bottom

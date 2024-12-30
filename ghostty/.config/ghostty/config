@@ -1,4 +1,16 @@
 # background = ffffff
 # foreground = ffffff
-keybind = cmd+j=toggle_quick_terminal
+#keybind = ctrl+j=toggle_quick_terminal
 cursor-style = block
+background = #000000
+background-opacity = 0.65
+background-blur-radius = 15
+
+
+theme = rose-pine
+font-size = 16
+background-opacity = 0.8
+window-decoration = false
+
+
+

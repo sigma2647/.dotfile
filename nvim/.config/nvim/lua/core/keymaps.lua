@@ -31,6 +31,7 @@ map("n", "S", ":w<CR>")
 map("v", "p", 'P')                          -- visual模式下覆盖粘贴不污染剪贴板
 
 
+-- insert mode specific
 map('i', '<A-b>', '<S-Left>', { silent = false })
 map('i', '<A-f>', '<S-Right>', { silent = false })
 map('i', '<C-a>', '<home>', { silent = false })
@@ -38,6 +39,8 @@ map('i', '<C-e>', '<end>', { silent = false })
 map('i', '<C-b>', '<left>', { silent = false })
 map('i', '<C-f>', '<right>', { silent = false })
 map('i', '<C-k>', '<C-o>D', { silent = false })
+
+map('i', '<C-c>', '<Esc>')
 
 -- Command mode specific
 map('c', '<A-b>', '<S-Left>', { silent = false })
