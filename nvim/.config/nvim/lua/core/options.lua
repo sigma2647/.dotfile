@@ -7,7 +7,7 @@ vim.cmd('set path+=**')					-- search current directory recursively
 vim.opt.syntax = "ON"
 vim.opt.backup = false
 vim.opt.compatible = false				-- turn off vi compatibility mode
--- vim.cmd('colorscheme catppuccin')			-- set colorscheme
+vim.cmd('colorscheme catppuccin')			-- set colorscheme
 vim.o.termguicolors = true
 
 vim.opt.scrolloff = 3					-- scroll page when cursor is 3 lines from top/bottom
@@ -33,3 +33,9 @@ vim.opt.smartcase = true
 vim.opt.incsearch = true				-- enable incremental searching
 vim.opt.wrap = true						-- 开启换行
 vim.opt.fileencoding = "utf-8"
+
+
+vim.api.nvim_set_hl(0, "Normal", { bg = "none"})
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none"})
+vim.api.nvim_set_hl(0, "NeoTreeNormal", { bg = "none"})
+vim.api.nvim_set_hl(0, "NeoTreeNormalNC", { bg = "none"})
