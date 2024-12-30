@@ -1,6 +1,9 @@
 # background = ffffff
 # foreground = ffffff
-#keybind = ctrl+j=toggle_quick_terminal
+
+# keybind = global:ctrl+j=toggle_quick_terminal
+# keybind = global:super+shift+]=toggle_quick_terminal
+
 cursor-style = block
 
 theme = rose-pine
