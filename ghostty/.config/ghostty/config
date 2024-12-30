@@ -47,3 +47,8 @@ keybind = super+b>n=new_window
 shell-integration-features = no-cursor 
 copy-on-select = clipboard
 
+
+
+keybind = ctrl+m=text:\x0D
+keybind = ctrl+i=text:\x09
+keybind = ctrl+[=text:\x1B
