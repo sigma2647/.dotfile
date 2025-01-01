@@ -1,7 +1,7 @@
 # background = ffffff
 # foreground = ffffff
 
-# keybind = global:ctrl+j=toggle_quick_terminal
+keybind = global:cmd+\=toggle_quick_terminal
 # keybind = global:super+shift+]=toggle_quick_terminal
 
 cursor-style = block
