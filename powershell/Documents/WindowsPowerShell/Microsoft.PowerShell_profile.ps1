@@ -7,6 +7,7 @@ Set-Alias -Name g -Value lazygit
 Set-Alias -Name l -Value y
 
 Set-Alias -Name v -Value nvim
+Set-Alias -Name vim -Value nvim
 
 
 Set-PSReadLineOption -PredictionSource History
