@@ -13,9 +13,11 @@ Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -ShowToolTips
 
 function goto-note { Set-Location -Path "$HOME\note\sigma" }
+function goto-dotfile { Set-Location -Path "$HOME\dotfile" }
 # function goto-projects { Set-Location -Path "D:\Projects" }
 
 Set-Alias -Name oo -Value goto-note
+Set-Alias -Name dot -Value goto-dotfile
 # Set-Alias -Name gp -Value goto-projects
 
 function lfcd {
