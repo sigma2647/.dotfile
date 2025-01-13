@@ -57,6 +57,12 @@ alias z='zeditor'
 alias z='zed'
 
 
+# ┌──────┐
+# │ note │
+# └──────┘
+alias note='note'
+
+
 
 # Check if exa is installed
 if command -v lsd &> /dev/null
