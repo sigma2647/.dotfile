@@ -17,9 +17,16 @@ setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
 
+setopt correct
+setopt autocd
+
+
+
+
 # Completion styling
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+zstyle ':completion:*' menu select
 
 # 关闭终端铃声
 setopt NO_BEEP
@@ -33,7 +40,6 @@ compinit
 
 # 其他配置
 setopt PROMPT_SUBST
-zstyle ':completion:*' menu select
 stty -ixon
 
 # ┌─────┐
@@ -41,3 +47,7 @@ stty -ixon
 # └─────┘
 
 export MANPAGER="nvim +Man!"
+
+
+export TERM=xterm-256color
+
